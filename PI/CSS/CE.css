@@ -173,7 +173,6 @@ main{
     box-shadow: 0px 0px 20px var(--cor9);
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to bottom, var(--cor10), var(--cor10), var(--cor9));
 }
 #infor h2{
     font-family: FP;
@@ -219,5 +218,96 @@ main{
 @media (max-width: 1300px){
     #D2 h1{
         font-size: 7em;
+    }
+
+    #infor h2{
+    font-family: FP;
+    color: var(--C1P);
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 0px 0px 10px var(--C1P);
+    margin: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+    }
+    #infor p{
+        font-size: 15px;
+    }
+    #POSTER img{
+    width: 400px;
+    height: 590px;
+    border-radius: 20px;
+    border: 1px solid var(--cor9);
+    box-shadow: 15px 15px 1px var(--cor9);
+    }
+}
+@media (max-width: 1090px){
+
+    #infor{
+        width: 40%;
+    }
+    #infor h2{
+    font-family: FP;
+    color: var(--C1P);
+    text-align: center;
+    font-size: 2em;
+    text-shadow: 0px 0px 10px var(--C1P);
+    margin: 50px;
+    margin-bottom: 10px;
+    display: inline-block;
+    }
+    #infor p{
+        font-size: 13px;
+    }
+    #infor h3{
+        font-size: 2em;
+    }
+    #POSTER img{
+    width: 440px;
+    height: 540px;
+    border-radius: 20px;
+    border: 1px solid var(--cor9);
+    box-shadow: 15px 15px 1px var(--cor9);
+    }
+}
+@media (max-width: 1000px){
+
+    #D2 h1{
+        font-size: 5em;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 890px){
+    #infor{
+        width: 35%;
+    }
+    #infor h2{
+    font-family: FP;
+    color: var(--C1P);
+    text-align: center;
+    font-size: 1.5em;
+    text-shadow: 0px 0px 10px var(--C1P);
+    margin-bottom: 10px;
+    display: inline-block;
+    }
+    #infor p{
+        font-size: 10px;
+        margin: 0px;
+        width: 70%;
+        padding-bottom: 20px;
+    }
+    #infor h3{
+        font-size: 1em;
+    }
+    #POSTER img{
+    width: 340px;
+    height: 440px;
+    border-radius: 20px;
+    border: 1px solid var(--cor9);
+    box-shadow: 15px 15px 1px var(--cor9);
+    } 
+    body{
+        background-color: yellow;
     }
 }
