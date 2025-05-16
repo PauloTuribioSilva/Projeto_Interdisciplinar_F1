@@ -678,12 +678,15 @@ footer{
     }
 }
 @media (max-width: 635px){
-        #FCO img{
+    #FCO img{
         width: 160px;
         height: 155px;
         cursor: default;
         display: inline-block;
         transition: all 1s ease;
+    }
+    #sobre p{
+        font-size: 12px;
     }
     #rodape h2{
         font-size: 40px;
@@ -695,6 +698,10 @@ footer{
     }
     #corre h2{
         font-size: 2.5em;
+    }
+    #f1 h2{
+        font-size: 2.5em;
+        margin-top: 40px;
     }
     #corre a{
         margin-top: 5px;
@@ -708,5 +715,54 @@ footer{
     }
     #LDC a{
         font-size: 10px;
+    }
+    nav ul li a{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+}
+@media (max-width: 500px){
+    #FCO{
+        gap: 13px;
+
+        width: 80%;
+    }
+    #FCO img{
+        width: 140px;
+        height: 145px;
+        cursor: default;
+        display: inline-block;
+        transition: all 1s ease;
+    }
+    #corre{
+        align-self: center;
+    }
+    #corre h2{
+        font-size: 2.2em;
+    }
+    #f1 h3{
+        font-size: 1em;
+        width: 90%;
+        align-self: center;
+    }
+    #rodape h2{
+        font-size: 2em;
+        -webkit-text-stroke: 1px black;
+    }
+    #NMS{
+        font-size: 13px;
+        align-self: center;
+    }
+    .container div h4{
+        font-size: 0.7em;
+    }
+    .container div p{
+        font-size: 8px;
+    }
+    header h1{
+        font-size: 2.3em;
+    }
+    header div p{
+        font-size: 0.8em;
     }
 }
