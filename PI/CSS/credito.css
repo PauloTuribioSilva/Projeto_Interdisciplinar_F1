@@ -1,0 +1,211 @@
+@font-face {
+    font-family: FP;
+    src: url(../Midias/Fontes/Horizon-Font/horizon.otf);
+}
+@font-face {
+    font-family: FS;
+    src: url(../Midias/Fontes/Horizon-Font/horizon_outlined.otf);
+}
+@font-face {
+    font-family: Roboto1;
+    src: url(../Midias/Fontes/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: M1;
+    src: url(../Midias/Fontes/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: MERRI;
+    src: url(../Midias/Fontes/Merriweather/Merriweather-VariableFont_opsz\,wdth\,wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+*::selection{
+    background-color: var(--cor2);
+    color: var(--C1P);
+}
+:root{
+    --C1P: rgb(247, 247, 247);
+    --cor1: rgb(227, 68, 65);
+    --cor2: rgb(216, 0, 0);
+    --cor3: #960a0a;
+    --cor4: rgb(102, 5, 5);
+    --cor5: rgb(104, 0, 0);
+    --cor6: rgb(22, 0, 0);
+    --cor7: rgb(106, 6, 8);
+    --cor8: rgb(14, 0, 0);
+    --cor9: rgb(29, 0, 0);
+    --VERMELHO: red;
+    --cor10: rgb(92, 76, 56);
+    --cor11: rgb(143, 118, 89);
+}
+body{
+    background-color: var(--cor9);
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    box-shadow: 0px 0px 10px var(--VERMELHO);
+    width: 100%;
+    height: 400px;
+    flex-wrap: wrap;
+    background-image: linear-gradient(45deg, var(--cor6),var(--cor3), var(--cor6));
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(60px);
+    background-position: center;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 8px double var(--VERMELHO);
+    border-radius: 0 0 60px 60px;
+}
+#D1{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#D1 a{
+    background-color: var(--cor3);    
+    text-decoration: none;
+    color: var(--C1P);
+    font-size: 8em;
+    transition: 0.3s;    
+    padding: 30px;
+    font-family: Roboto1;
+    border-radius: 50%;
+    box-shadow: -5px 5px 1px black;
+    text-align: center;
+    display: inline-block;
+    border: 2px solid var(--cor8);
+}
+#D1 a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
+}
+#D2{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#D2 h1{
+    font-family: FP;
+    font-size: 9em;
+    text-align: center;
+    color: var(--C1P);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-shadow: 0px 0px 10px var(--C1P);
+    font-style: italic;
+}
+#D2 h2{
+    font-family: FS;
+    color: var(--C1P);
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-style: italic;
+}
+#D2 h3{
+    color: var(--C1P);
+    font-family: FP;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 3em;
+}
+#D2 p{
+    color: var(--C1P);
+    font-family: M1;
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 1px;
+    font-size: 1em;
+    width: 70%;
+}
+main{
+    width: 90%;
+    align-self: center;
+    margin-top: 50px;
+    background-color: var(--cor8);
+    border: 8px double var(--VERMELHO);
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px var(--VERMELHO);
+}
+main div{
+    width: 100%;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: var(--cor9);
+}
+div img{
+    width: 30%;
+}
+.inform{
+    text-align: center;
+    width: 60%;
+    height: 100%;
+    color: var(--C1P);
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.inform h2{
+    font-family: FP;
+    font-style: italic;
+    font-size: 3em;
+}
+.inform p{
+    font-family: M1;
+    width: 90%;
+    margin-bottom: 20px;
+}
+#eq{
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+#paulo h2{
+    -webkit-text-stroke: 2px blue;
+}
+aside{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+aside a{
+    width: 30%;
+    display: inline-block;
+}
+aside a:hover{
+    transform: scale(1.1);
+}
+aside a img{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--cor3);
+}

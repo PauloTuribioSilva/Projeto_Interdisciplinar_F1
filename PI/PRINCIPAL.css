@@ -484,6 +484,16 @@ footer{
     text-align: center;
     font-style: italic;
 }
+#rodape a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 10px 20px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
 @media (max-width: 1220px){
     header{
         height: 350px;
