@@ -75,7 +75,7 @@ header{
     background-color: var(--cor3);    
     text-decoration: none;
     color: var(--C1P);
-    font-size: 8em;
+    font-size: 8vw;
     transition: 0.3s;    
     padding: 30px;
     font-family: Roboto1;
@@ -96,10 +96,11 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #D2 h1{
     font-family: FP;
-    font-size: 9em;
+    font-size: 10vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
@@ -175,19 +176,20 @@ main{
     box-shadow: 0px 0px 10px black;
     width: 90%;
     text-align: center;
-    background-color: var(--cor4);
+    background-image: linear-gradient(45deg, var(--cor4), var(--cor2) ) ;
     padding: 30px;
     border-radius: 20px;
     color: var(--C1P);
 }
 #sino h2{
     font-family: FP;
-    font-size: 4em;
+    font-size: 5vw;
     margin: 10px;
     text-shadow: 0px 0px 10px var(--C1P);
 }
 #sino p{
     font-family: M1;
+    font-size: 1.5vw;
 }
 #poster3{
     width: 90%;
