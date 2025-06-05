@@ -116,6 +116,12 @@ header{
     font-size: 2em;
     font-style: italic;
 }
+#fi{
+    font-family: FS;
+    color: var(--C1P);
+    text-shadow: 0px 0px 10px var(--C1P);
+    font-size: 7vw;
+}
 #D2 h3{
     color: var(--C1P);
     font-family: FP;
@@ -152,6 +158,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 60px;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
 }
