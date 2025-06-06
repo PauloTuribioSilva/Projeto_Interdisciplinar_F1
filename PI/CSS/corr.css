@@ -130,3 +130,225 @@ header{
     font-size: 1em;
     width: 70%;
 }
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 1000px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+background-image: linear-gradient(45deg, var(--cor7),var(--cor8), var(--cor7));  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px var(--cor5);
+  border: 6px double var(--VERMELHO);
+  text-align: left;
+  overflow: hidden;
+  justify-self: center;
+  margin: 10px;
+}
+
+.card-img {
+  flex: 1;
+  max-width: 40%;
+}
+
+.card-img img {
+  width: 90%;
+  height: 90%;
+  object-fit: contain;
+  object-position: center; 
+  border-radius: 8px;
+  filter: brightness(300%);
+}
+
+
+.card-content {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card-content h1{
+  color: var(--C1P);
+  font-family: FS;
+  text-align: center;
+  font-size: 2vw;
+  text-shadow: 0px 0px 10px var(--C1P);
+}
+.card-content h2{
+  font-family: FP;
+  color: var(--C1P);
+  font-size: 1.5vw;
+}
+.card-content p{
+  color: var(--C1P);
+  font-family: M1;
+  font-size: 1vw;
+  text-align: center;
+  margin-top: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 20px auto;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: var(--cor3);
+  color: white;
+  font-family: Roboto1;
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--cor4);
+  min-width: 200px;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: var(--C1P);
+  font-family: MERRI;
+  padding: 8px 16px;
+  text-decoration: none;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--VERMELHO);
+  transform: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--cor3);
+  box-shadow: 0px 0px 10px var(--VERMELHO);
+}
+
+#rodape a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 10px 20px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
+#rodape p{
+    font-family: Roboto1;
+    color: var(--C1P);
+}
+#rodape h2{
+    font-family: FP;
+    font-size: 6vw;
+    text-align: center;
+    color: var(--C1P);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    -webkit-text-stroke: 2px black;
+}
+footer{
+    background-color: var(--cor4);
+    border-top: 5px double var(--VERMELHO);
+    width: 100%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0px 0px 10px var(--VERMELHO);
+}
+#rodape{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;    
+
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
+
+}#rodape a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 10px 20px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
+#rodape p{
+    font-family: Roboto1;
+    color: var(--C1P);
+}
+#rodape h2{
+    font-family: FP;
+    font-size: 6vw;
+    text-align: center;
+    color: var(--C1P);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    -webkit-text-stroke: 2px black;
+}
+footer{
+    background-color: var(--cor4);
+    border-top: 5px double var(--VERMELHO);
+    width: 100%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0px 0px 10px var(--VERMELHO);
+}
+#rodape{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;    
+
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
+}
