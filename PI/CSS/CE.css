@@ -208,3 +208,54 @@ main{
     border-radius: 20px;
     box-shadow: 0px 0px 10px black;
 }
+#pod{
+    margin-top: 20px;
+    width: 90%;
+    padding: 20px;
+    background-image: linear-gradient(45deg, var(--cor11), var(--cor9));
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#po{
+    font-family: FS;
+    color: var(--C1P);
+    text-shadow: 0px 0px 10px var(--C1P);
+    font-size: 7vw;
+    margin-bottom: 20px;
+}
+#conta{
+    width: 90%;
+    height: 250px;
+    padding: 20px;
+    border-radius: 40px;
+    display: flex;
+    box-shadow: 0px 0px 10px black;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: linear-gradient(45deg, var(--cor6),var(--cor3), var(--cor6));
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: auto;
+}
+
+#conta div{
+    overflow: hidden;
+    border-radius: 22px;
+    width: 182px;
+    height: 200px;
+    margin: 15px;
+    box-shadow: 8px 8px 1px black;
+    transition: 0.3s ease;
+}
+#conta a img{
+    width: 100%;
+}
+#conta div:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px var(--cor8);
+}
