@@ -73,7 +73,7 @@ header{
     background-color: var(--cor3);    
     text-decoration: none;
     color: var(--C1P);
-    font-size: 8em;
+    font-size: 8vw;
     transition: 0.3s;    
     padding: 30px;
     font-family: Roboto1;
@@ -94,10 +94,11 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 #D2 h1{
     font-family: FP;
-    font-size: 10em;
+    font-size: 8vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
@@ -161,10 +162,12 @@ header{
     justify-content: center;
 }
 .INF{
-    width: 20%;
-    height: auto;
+    width: 244px;
+    height: 170px;
     background-image: linear-gradient(45deg, var(--cor4), var(--cor6));
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 0px 20px var(--cor1);
     border: 6px double var(--C1P);
@@ -214,10 +217,12 @@ header{
     font-size: 1em;
 }
 .INFO{
-    width: 20%;
-    height: auto;
+    width: 244px;
+    height: 170px;
     background-image: linear-gradient(45deg, rgb(255, 72, 0), rgb(255, 208, 0));
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 0px 20px var(--cor1);
     border: 6px double var(--C1P);
@@ -234,10 +239,12 @@ header{
     text-align: center;
 }
 .INFO2{
-    width: 20%;
-    height: auto;
+    width: 244px;
+    height: 170px;
     background-image: linear-gradient(45deg, rgb(0, 77, 23), rgb(5, 150, 0));
-    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
     box-shadow: 0px 0px 20px var(--cor1);
     border: 6px double var(--C1P);
@@ -253,25 +260,31 @@ header{
     color: var(--C1P);
     text-align: center;
 }
+#rodape a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 10px 20px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
 #rodape p{
     font-family: Roboto1;
     color: var(--C1P);
 }
 #rodape h2{
     font-family: FP;
-    font-size: 4em;
+    font-size: 6vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 30px;
-    -webkit-text-stroke: 4px black;
-    text-shadow: -10px 10px 1px black;
-}
-#NMS{
-    font-family: M1;
-    color: var(--C1P);
+    -webkit-text-stroke: 2px black;
 }
 footer{
     background-color: var(--cor4);
@@ -279,7 +292,7 @@ footer{
     width: 100%;
     height: 250px;
     padding-bottom: 20px;
-    margin-top: 80px;
+    margin-top: 30px;
     border-radius: 60px 60px 0 0;
     box-shadow: 0px 0px 10px var(--VERMELHO);
 }
@@ -291,4 +304,9 @@ footer{
     flex-direction: column;
     justify-content: space-evenly;    
 
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
 }

@@ -288,10 +288,6 @@ main{
     margin-top: 30px;
     -webkit-text-stroke: 2px black;
 }
-#NMS{
-    font-family: M1;
-    color: var(--C1P);
-}
 footer{
     background-color: var(--cor4);
     border-top: 5px double var(--VERMELHO);
