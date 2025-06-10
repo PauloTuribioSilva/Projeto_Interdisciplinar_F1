@@ -131,7 +131,7 @@ header{
     text-align: center;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 2vw;
     width: 70%;
 }
 main{
@@ -180,7 +180,7 @@ aside img{
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding: 40px;
+    padding-bottom: 40px;
     border: 8px double var(--COREQUIPE);
     box-shadow: 0px 0px 10px var(--COREQUIPE);
     overflow: hidden;
@@ -201,14 +201,14 @@ aside img{
 .corredor{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .corredor img{
     width: 40%;
     height: 100%;
 }
 .corredor aside{
-    width: 58%;
+    width: 50%;
     display: flex;
     padding: 10px;
     border-radius: 20px;
@@ -257,4 +257,86 @@ aside img{
     --COREQUIPE: rgb(21, 18, 61);
     --COREQUIPE2: rgb(124, 20, 20);
     --COREQUIPE3: rgb(255, 195, 64);
+}
+.equipe.mercedes{
+    --COREQUIPE: rgb(18, 61, 59);
+    --COREQUIPE2: rgb(20, 124, 101);
+    --COREQUIPE3: rgb(50, 157, 172);
+}
+.equipe.aston{
+    --COREQUIPE: rgb(47, 158, 153);
+    --COREQUIPE2: rgb(15, 83, 69);
+    --COREQUIPE3: rgb(13, 87, 71);
+}
+.equipe.haas{
+    --COREQUIPE: rgb(158, 47, 47);
+    --COREQUIPE2: rgb(163, 0, 0);
+    --COREQUIPE3: rgb(22, 22, 22);
+}
+.equipe.rb{
+    --COREQUIPE: rgb(162, 202, 255);
+    --COREQUIPE2: rgb(81, 136, 255);
+    --COREQUIPE3: rgb(14, 25, 43);
+}
+.equipe.williams{
+    --COREQUIPE: rgb(0, 86, 199);
+    --COREQUIPE2: rgb(12, 89, 255);
+    --COREQUIPE3: rgb(38, 62, 99);
+}
+.equipe.que{
+    --COREQUIPE: rgb(102, 102, 102);
+    --COREQUIPE2: rgb(58, 58, 58);
+    --COREQUIPE3: rgb(42, 47, 53);
+    padding-bottom: 90px;
+}
+
+#rodape a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 10px 20px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
+#rodape p{
+    font-family: Roboto1;
+    color: var(--C1P);
+}
+#rodape h2{
+    font-family: FP;
+    font-size: 6vw;
+    text-align: center;
+    color: var(--C1P);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    -webkit-text-stroke: 2px black;
+}
+footer{
+    background-color: var(--cor4);
+    border-top: 5px double var(--VERMELHO);
+    width: 100%;
+    height: 250px;
+    padding-bottom: 20px;
+    margin-top: 100px;
+    border-radius: 60px 60px 0 0;
+    box-shadow: 0px 0px 10px var(--VERMELHO);
+}
+#rodape{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;    
+
+}
+#rodape a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
 }
