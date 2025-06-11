@@ -49,7 +49,8 @@ body{
 header{
     box-shadow: 0px 0px 10px var(--VERMELHO);
     width: 100%;
-    height: 400px;
+    height: auto;
+    padding-bottom: 60px;
     flex-wrap: wrap;
     background-image: linear-gradient(45deg, var(--cor6),var(--cor3), var(--cor6));
     background-size: cover;
@@ -57,13 +58,13 @@ header{
     backdrop-filter: blur(60px);
     background-position: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     border-bottom: 8px double var(--VERMELHO);
     border-radius: 0 0 60px 60px;
 }
 #D1{
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    height: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -73,11 +74,13 @@ header{
     background-color: var(--cor3);    
     text-decoration: none;
     color: var(--C1P);
-    font-size: 8vw;
+    font-size: 1.5vw;
     transition: 0.3s;    
-    padding: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    align-self: start;
     font-family: Roboto1;
-    border-radius: 50%;
     box-shadow: -5px 5px 1px black;
     text-align: center;
     display: inline-block;
@@ -89,29 +92,30 @@ header{
     box-shadow: 0px 0px 20px black;
 }
 #D2{
-    width: 70%;
-    height: 100%;
+    width: 100%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 #D2 h1{
     font-family: FP;
-    font-size: 8vw;
+    font-size: 10vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    
     text-shadow: 0px 0px 10px var(--C1P);
     font-style: italic;
 }
 #D2 h2{
     font-family: FS;
     color: var(--C1P);
-    margin-bottom: 10px;
-    font-size: 2em;
+    font-size: 4vw;
     font-style: italic;
 }
 #D2 h3{
@@ -119,7 +123,7 @@ header{
     font-family: FP;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 3em;
+    font-size: 3vw;
 }
 #D2 p{
     color: var(--C1P);
@@ -127,7 +131,7 @@ header{
     text-align: center;
     font-style: italic;
     letter-spacing: 1px;
-    font-size: 1em;
+    font-size: 1.5vw;
     width: 70%;
 }
 #PC{

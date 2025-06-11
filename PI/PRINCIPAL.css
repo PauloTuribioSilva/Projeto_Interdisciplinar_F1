@@ -242,7 +242,7 @@ main{
     text-decoration: none;
     font-family: Roboto1;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 50px 10px;
     transition: all 0.5s;
 }
 #f1 div a:hover{
