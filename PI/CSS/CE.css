@@ -222,7 +222,7 @@ main{
     align-items: center;
     flex-wrap: wrap;
 }
-#po{
+#po, #fi{
     font-family: FS;
     color: var(--C1P);
     text-shadow: 0px 0px 10px var(--C1P);
