@@ -425,14 +425,14 @@ main{
     font-size: 1.5vw;
     margin-bottom: 30px;
 }
-#classificacao div a{
+#classificacao a{
     background-color: var(--cor3);
     color: var(--C1P);
     text-decoration: none;
     display: inline-block;
     font-family: Roboto1;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 50px 10px;
     transition: all 0.5s;
     font-size: 1.1VW;
 }
