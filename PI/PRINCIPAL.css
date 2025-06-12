@@ -274,6 +274,7 @@ main{
 #corridas div{
     width: 80%;
     display: flex;
+    gap: 10px;
     justify-content: end;
 }
 #corridas div a{
