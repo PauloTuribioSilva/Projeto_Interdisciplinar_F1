@@ -101,15 +101,15 @@ header div p{
 }
 header h1{
     font-family: FP;
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: center;
     color: var(--C1P);
+    -webkit-text-stroke: 2px black;
     display: flex;
     margin-top: 0px;
     font-style: italic;
     flex-direction: row;
     align-items: center;
-    -webkit-text-stroke: 2px black;
 }
 header nav{
     display: flex;
@@ -128,7 +128,7 @@ nav ul{
 }
 nav ul li{
     display: inline-block;
-    width: 24%;
+    width: 18%;
     height: 70%;
     list-style: none;
     display: flex;
@@ -163,7 +163,7 @@ a:hover{
 main{
     width: 90%;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 40px;
     height: auto;
     background-color: var(--cor8);
     border: 8px double var(--VERMELHO);
@@ -184,7 +184,7 @@ main{
 }
 #sobre h2{
     font-family: FP;
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 30px;
     -webkit-text-stroke: 1px var(--C1P);
 }
@@ -197,7 +197,8 @@ main{
     color: var(--C1P);
     text-shadow: 0px 0px 3px black;
     font-family: Roboto1;
-    text-align: end;
+    text-align: start;
+    text-indent: calc(3em);
     font-weight: lighter;
     font-size: 1.4vw;
     margin: 20px;
@@ -209,7 +210,7 @@ main{
 }
 #f1 h2{
     font-family: FS;
-    font-size: 5vw;
+    font-size: 4vw;
     padding: 30px;
     -webkit-text-stroke: 1px var(--C1P);
 }
@@ -218,6 +219,7 @@ main{
     text-shadow: 0px 0px 3px black;
     font-family: Roboto1;
     text-align: start;
+    text-indent: calc(3em);
     font-weight: lighter;
     font-size: 1.4vw;
     padding: 20px;
@@ -252,11 +254,10 @@ main{
 #corridas{
     width: 100%;
     background-color: var(--cor8);
-    margin-top: 20px;
 }
 #corridas h2{
     font-family: FS;
-    font-size: 5vw;
+    font-size: 4vw;
     color: var(--cor7);
     padding: 30px;
     -webkit-text-stroke: 1px var(--C1P);
@@ -266,22 +267,21 @@ main{
     text-shadow: 0px 0px 5px black;
     font-family: Roboto1;
     text-align: start;
+    text-indent: calc(3em);
     font-weight: lighter;
     font-size: 1.4vw;
     width: 100%;
     padding: 20px;
 }
 #corridas div{
-    width: 80%;
     display: flex;
-    gap: 10px;
-    justify-content: end;
+    justify-content: center;
 }
 #corridas div a{
     background-color: var(--cor3);
     color: var(--C1P);
     padding:  10px 20px;
-    font-size: 1vw;
+    font-size: 1.1vw;
     border-radius:  50px 10px;
     text-decoration: none;
     display: inline-block;
@@ -299,7 +299,7 @@ main{
     font-family: M1;
     color: var(--C1P);
     text-shadow: 0px 0px 10px var(--C1P);
-    font-size: 3vw;
+    font-size: 2.5vw;
 }
 .container div{
     width: 20%;
@@ -328,6 +328,7 @@ main{
 }
 .container{
     margin-top: 60px;
+    margin-bottom: 15px;
     display: flex;
     height: 150px;
     justify-content: space-evenly;
@@ -353,7 +354,7 @@ main{
 }
 #LDC h3{
     font-family: MERRI;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-align: center;
     color: var(--C1P);
     margin-bottom: 20px;
@@ -364,27 +365,75 @@ main{
 }
 #corre{
     display: flex;
-    flex-direction: column;
-    padding: 20px;
+    flex-direction: row;
 }
 #corre h2{
-    text-align: center;
-    font-family: FP;
-    font-size: 5vw;
+    font-family: FS;
+    font-size: 4vw;
     color: var(--C1P);
     text-shadow: 0px 0px 3vw var(--C1P);
     padding: 30px;
+    -webkit-text-stroke: 1px var(--C1P);
 }
 #corre p{
     color: var(--C1P);
     text-shadow: 0px 0px 5px black;
     font-family: Roboto1;
     width: 100%;
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    text-align: start;
+    text-indent: calc(3em);
     font-weight: lighter;
     font-size: 1.5vw;
     margin-bottom: 30px;
+}
+#corre a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 10px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+    font-family: Roboto1;
+    font-size: 1vw;
+}
+#corre a:hover{
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 10px var(--cor2);
+}
+#classificacao h2{
+    font-family: FS;
+    font-size: 4vw;
+    color: var(--cor7);
+    padding: 30px;
+    -webkit-text-stroke: 1px var(--C1P);
+}
+#classificacao p{
+    color: var(--C1P);
+    text-shadow: 0px 0px 5px black;
+    font-family: Roboto1;
+    width: 100%;
+    padding: 10px;
+    text-align: start;
+    text-indent: calc(3em);
+    font-weight: lighter;
+    font-size: 1.5vw;
+    margin-bottom: 30px;
+}
+#classificacao div a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    text-decoration: none;
+    font-family: Roboto1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.5s;
+    font-size: 1.1VW;
+}
+#classificacao a:hover{
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 10px var(--cor2);
 }
 #FCO{
     display: flex;
@@ -412,7 +461,7 @@ footer{
     background-color: var(--cor4);
     border-top: 5px double var(--VERMELHO);
     width: 100%;
-    height: 250px;
+    height: 160px;
     padding-bottom: 20px;
     margin-top: 30px;
     border-radius: 60px 60px 0 0;
@@ -432,24 +481,8 @@ footer{
     flex-wrap: wrap;
     justify-content: space-evenly;
     width: 100%;
-    margin-top: 0;
+    margin-bottom: 10px;
     padding: 20px;
-}
-#corre a{
-    background-color: var(--cor3);
-    color: var(--C1P);
-    padding: 10px;
-    margin-top: 20px;
-    border-radius:  50px 10px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.5s;
-    font-family: Roboto1;
-    font-size: 1vw;
-}
-#corre a:hover{
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 10px var(--cor2);
 }
 #rodape p{
     font-family: Roboto1;
@@ -457,7 +490,6 @@ footer{
 }
 #rodape h2{
     font-family: FP;
-    font-size: 6vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
@@ -473,9 +505,9 @@ footer{
 #SITA{
     background-image: url(Midias/Imagens/AYRT.png);
     width: 100%;
-    height: 200px;
+    height: 220px;
     background-position: center;
-    background-size: cover;
+    background-size: cotain;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -503,11 +535,10 @@ footer{
 #rodape a{
     background-color: var(--cor3);
     color: var(--C1P);
-    padding: 10px 20px;
+    padding: 7px 15px;
     border-radius:  50px 10px;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
     transition: all 0.5s;
     font-family: Roboto1;
 }
