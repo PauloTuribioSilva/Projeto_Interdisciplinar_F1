@@ -402,6 +402,10 @@ main{
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
 }
+#classificacao{
+    display: flex;
+    flex-direction: row;
+}
 #classificacao h2{
     font-family: FS;
     font-size: 4vw;
