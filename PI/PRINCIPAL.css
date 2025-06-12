@@ -425,6 +425,7 @@ main{
     background-color: var(--cor3);
     color: var(--C1P);
     text-decoration: none;
+    display: inline-block;
     font-family: Roboto1;
     padding: 10px 20px;
     border-radius: 10px;
