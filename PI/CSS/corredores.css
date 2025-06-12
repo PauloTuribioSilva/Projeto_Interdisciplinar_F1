@@ -165,13 +165,15 @@ main section{
 }
 #pista div aside{
     display: flex;
-    border-radius: 60px;
     flex-direction: column;
     padding: 5px;
-    background-image: url(../Midias/Imagens/icone/xadrez.jpeg);
 }
 aside img{
+    box-shadow: 0px 0px 10px var(--cor1);
+    border-radius: 20px;
+    margin: 10px;
     filter: drop-shadow(0px 0px 20px black);
+    background-image: url(../Midias/Imagens/icone/xadrez.jpeg);
 }
 .SE{
     margin-top: 50px;
