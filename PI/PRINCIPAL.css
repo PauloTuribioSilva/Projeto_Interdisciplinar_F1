@@ -402,7 +402,7 @@ main{
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
 }
-#classificacao{
+#classificacao div{
     display: flex;
     flex-direction: row;
 }
