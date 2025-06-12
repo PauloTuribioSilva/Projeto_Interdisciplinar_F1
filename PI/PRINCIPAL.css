@@ -363,6 +363,48 @@ main{
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
 }
+#classificacao{
+    width: 100%;
+    background-color: var(--cor8);
+}
+#classificacao h2{
+    font-family: FS;
+    font-size: 4vw;
+    color: var(--cor7);
+    padding: 30px;
+    -webkit-text-stroke: 1px var(--C1P);
+}
+#classificacao p{
+    color: var(--C1P);
+    text-shadow: 0px 0px 5px black;
+    font-family: Roboto1;
+    text-align: start;
+    text-indent: calc(3em);
+    font-weight: lighter;
+    font-size: 1.4vw;
+    width: 100%;
+    padding: 20px;
+}
+#classificacao div{
+    display: flex;
+    justify-content: center;
+}
+#classificacao div a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding:  10px 20px;
+    font-size: 1.1vw;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
+#classificacao div a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 10px var(--cor2);
+}
 #corre{
     display: flex;
     flex-direction: row;
@@ -399,45 +441,6 @@ main{
     font-size: 1vw;
 }
 #corre a:hover{
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 10px var(--cor2);
-}
-#classificacao{
-    display: flex;
-    flex-direction: row;
-}
-#classificacao h2{
-    font-family: FS;
-    font-size: 4vw;
-    color: var(--C1P);
-    text-shadow: 0px 0px 3vw var(--C1P);
-    padding: 30px;
-    -webkit-text-stroke: 1px var(--C1P);
-}
-#classificacao p{
-    color: var(--C1P);
-    text-shadow: 0px 0px 5px black;
-    font-family: Roboto1;
-    width: 100%;
-    padding: 10px;
-    text-align: start;
-    text-indent: calc(3em);
-    font-weight: lighter;
-    font-size: 1.5vw;
-    margin-bottom: 30px;
-}
-#classificacao a{
-    background-color: var(--cor3);
-    color: var(--C1P);
-    padding: 10px;
-    border-radius:  50px 10px;
-    text-decoration: none;
-    display: inline-block;
-    transition: all 0.5s;
-    font-family: Roboto1;
-    font-size: 1vw;
-}
-#classificacao a:hover{
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
 }
