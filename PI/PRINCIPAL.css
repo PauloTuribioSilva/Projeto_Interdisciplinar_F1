@@ -402,14 +402,15 @@ main{
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
 }
-#classificacao div{
+#classificacao{
     display: flex;
     flex-direction: row;
 }
 #classificacao h2{
     font-family: FS;
     font-size: 4vw;
-    color: var(--cor7);
+    color: var(--C1P);
+    text-shadow: 0px 0px 3vw var(--C1P);
     padding: 30px;
     -webkit-text-stroke: 1px var(--C1P);
 }
@@ -428,13 +429,13 @@ main{
 #classificacao a{
     background-color: var(--cor3);
     color: var(--C1P);
+    padding: 10px;
+    border-radius:  50px 10px;
     text-decoration: none;
     display: inline-block;
-    font-family: Roboto1;
-    padding: 10px 20px;
-    border-radius: 50px 10px;
     transition: all 0.5s;
-    font-size: 1.1VW;
+    font-family: Roboto1;
+    font-size: 1vw;
 }
 #classificacao a:hover{
     background-color: var(--cor2);
