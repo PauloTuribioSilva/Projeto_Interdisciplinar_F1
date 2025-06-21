@@ -33,57 +33,58 @@
     --C1P: rgb(247, 247, 247);
     --cor1: rgb(227, 68, 65);
     --cor2: rgb(216, 0, 0);
-    --cor3: #960a0a;
+    --cor3: rgb(150, 10, 10);
     --cor4: rgb(102, 5, 5);
     --cor5: rgb(104, 0, 0);
     --cor6: rgb(22, 0, 0);
     --cor7: rgb(106, 6, 8);
     --cor8: rgb(14, 0, 0);
     --cor9: rgb(29, 0, 0);
+    --cor10: rgb(207, 201, 203);
     --VERMELHO: red;
 }
-body{
+#body{
     background-color: var(--cor9);
     overflow-x: hidden;
 }
-header{
+nav{
     box-shadow: 0px 0px 10px var(--VERMELHO);
-    width: 100%;
-    height: auto;
-    padding-bottom: 60px;
-    flex-wrap: wrap;
     background-image: linear-gradient(45deg, var(--cor6),var(--cor3), var(--cor6));
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(60px);
     background-position: center;
-    display: flex;
-    flex-direction: column;
     border-bottom: 8px double var(--VERMELHO);
     border-radius: 0 0 60px 60px;
 }
-#D1{
-    width: 100%;
-    height: 20%;
+main{
+    box-shadow: 0px 0px 10px var(--cor6);
+    background-color: var(--cor8);
+}
+#datas{
+    width: 95%;
+    align-self: center;
+    margin-top: 30px;
+    height: auto;
+    background-color: var(--cor10);
+    border: 8px double var(--VERMELHO);
     display: flex;
+    border-radius: 30px;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    gap: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px var(--VERMELHO);
 }
 #D1 a{
     background-color: var(--cor3);    
     text-decoration: none;
     color: var(--C1P);
-    font-size: 1.5vw;
+    font-size: 2vw;
     transition: 0.3s;    
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 20px;
-    align-self: start;
+    padding: 5px 20px;
     font-family: Roboto1;
+    border-radius: 10%;
     box-shadow: -5px 5px 1px black;
-    text-align: center;
-    display: inline-block;
     border: 2px solid var(--cor8);
 }
 #D1 a:hover{
@@ -91,31 +92,18 @@ header{
     background-color: var(--cor2);
     box-shadow: 0px 0px 20px black;
 }
-#D2{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
 #D2 h1{
     font-family: FP;
-    font-size: 10vw;
-    text-align: center;
+    font-size: 4vw;
     color: var(--C1P);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
     text-shadow: 0px 0px 10px var(--C1P);
     font-style: italic;
 }
 #D2 h2{
-    font-family: FS;
+    font-family: FP;
     color: var(--C1P);
-    font-size: 4vw;
+    -webkit-text-stroke: 2px black;
+    font-size: 2vw;
     font-style: italic;
 }
 #D2 h3{
@@ -124,15 +112,6 @@ header{
     font-style: italic;
     letter-spacing: 1px;
     font-size: 3vw;
-}
-#D2 p{
-    color: var(--C1P);
-    font-family: M1;
-    text-align: center;
-    font-style: italic;
-    letter-spacing: 1px;
-    font-size: 1.5vw;
-    width: 70%;
 }
 #PC{
     width: 100%;
@@ -165,9 +144,6 @@ header{
     height: 100%;
     gap: 50px;
 }
-nav #text-fs-20{
-    font-size: 22px;
-}
 .bg-custom{
     background-color: rgb(250, 244, 244);
 }
@@ -178,10 +154,10 @@ nav #text-fs-20{
     border: 6px double var(--C1P);
 }
 .INF1{
-    min-height: 29vh;
+    min-height: 27vh;
 }
 .INF{
-    min-height: 38vh;
+    min-height: 30vh;
 }
 .INF1 h3, .INF h3{
     font-family: Roboto1;
@@ -194,12 +170,8 @@ nav #text-fs-20{
     color: var(--C1P);
     text-align: center;
 }
-#TREINOS{
-    border-radius: 10px;
-}
 #TREINOS, #CORRIDAS{
     box-shadow: 0px 0px 10px var(--cor6);
-    margin: 10px;
     border-radius: 10px;
     background-color: var(--cor5);
     width: 100%;
@@ -297,7 +269,7 @@ footer{
     border-radius: 10px;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    /*font-size: 1vw;*/
     transition: all 0.5s;
     font-family: Roboto1;
 }
@@ -305,4 +277,8 @@ footer{
     background-color: var(--cor2);
     box-shadow: 0px 0px 10px var(--cor2);
     transform: scale(1.05);
+}
+#NMS{
+    font-family: M1;
+    color: var(--C1P);
 }
