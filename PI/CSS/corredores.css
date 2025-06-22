@@ -308,33 +308,6 @@ aside a:hover{
     --COREQUIPE3: rgb(42, 47, 53);
     padding-bottom: 90px;
 }
-
-#rodape a{
-    background-color: var(--cor3);
-    color: var(--C1P);
-    padding: 10px 20px;
-    border-radius:  50px 10px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1vw;
-    transition: all 0.5s;
-    font-family: Roboto1;
-}
-#rodape p{
-    font-family: Roboto1;
-    color: var(--C1P);
-}
-#rodape h2{
-    font-family: FP;
-    font-size: 6vw;
-    text-align: center;
-    color: var(--C1P);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
-    -webkit-text-stroke: 2px black;
-}
 footer{
     background-color: var(--cor4);
     border-top: 5px double var(--VERMELHO);
@@ -352,31 +325,9 @@ footer{
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;    
-
-}
-#rodape a:hover{
-    transform: scale(1.1);
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 20px black;
-}
-#rodape a{
-    background-color: var(--cor3);
-    color: var(--C1P);
-    padding: 10px 20px;
-    border-radius: 40px 10px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1vw;
-    transition: all 0.5s;
-    font-family: Roboto1;
-}
-#rodape p{
-    font-family: Roboto1;
-    color: var(--C1P);
 }
 #rodape h2{
     font-family: FP;
-    font-size: 2vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
@@ -384,4 +335,28 @@ footer{
     align-items: center;
     margin-top: 30px;
     -webkit-text-stroke: 2px black;
+}
+#rodape p{
+    font-family: Roboto1;
+    color: var(--C1P);
+}
+#rodape a{
+    background-color: var(--cor3);
+    color: var(--C1P);
+    padding: 7px 15px;
+    border-radius:  50px 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.5s;
+    font-family: Roboto1;
+}
+a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
+}
+#rodape a:hover{
+    transform: scale(1.1);
+    background-color: var(--cor2);
+    box-shadow: 0px 0px 20px black;
 }
