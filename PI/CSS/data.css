@@ -242,16 +242,12 @@ footer{
 #rodape{
     width: 100%;
     height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;
 }
 #rodape p{
     font-family: Roboto1;
     color: var(--C1P);
 }
-#rodape h2{
+#rodape h3{
     font-family: FP;
     /*font-size: 2vw;*/
     text-align: center;
@@ -266,7 +262,8 @@ footer{
     background-color: var(--cor3);
     color: var(--C1P);
     padding: 8px 15px;
-    border-radius: 10px;
+    margin-bottom: 10px;
+    border-radius: 50px 10px;
     text-decoration: none;
     display: inline-block;
     /*font-size: 1vw;*/

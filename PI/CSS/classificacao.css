@@ -160,20 +160,15 @@ main{
 footer{
     background-color: var(--cor4);
     border-top: 5px double var(--VERMELHO);
-    width: 100%;
-    height: 160px;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    /*width: 100%;
+    height: 250px;*/
+    padding-bottom: 10px;
+    margin-top: 30px;
     border-radius: 60px 60px 0 0;
     box-shadow: 0px 0px 10px var(--VERMELHO);
 }
 #rodape{
     width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;    
 }
 #rodape p{
     font-family: Roboto1;
@@ -181,20 +176,21 @@ footer{
 }
 #rodape h3{
     font-family: FP;
-    /*font-size: 4em;*/
+    /*font-size: 2vw;*/
     text-align: center;
     color: var(--C1P);
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 7px;
+    margin-top: 30px;
     -webkit-text-stroke: 2px black;
 }
 #rodape a{
     background-color: var(--cor3);
     color: var(--C1P);
-    padding: 7px 15px;
-    border-radius: 10px;
+    padding: 8px 15px;
+    margin-bottom: 10px;
+    border-radius: 50px 10px;
     text-decoration: none;
     display: inline-block;
     /*font-size: 1vw;*/
