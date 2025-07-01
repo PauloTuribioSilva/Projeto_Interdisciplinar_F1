@@ -48,23 +48,26 @@ body{
 }
 header{
     box-shadow: 0px 0px 10px var(--VERMELHO);
-    width: 100%;
-    height: auto;
-    padding-bottom: 60px;
-    flex-wrap: wrap;
+    /*width: 100%;
+    height: auto;*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 100%;
+    /*flex-wrap: wrap;*/
     background-image: linear-gradient(45deg, var(--cor6),var(--cor3), var(--cor6));
     background-size: cover;
     background-repeat: no-repeat;
     backdrop-filter: blur(60px);
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
+    /*flex-direction: row;*/
     border-bottom: 8px double var(--VERMELHO);
     border-radius: 0 0 60px 60px;
 }
 #D1{
-    width: 100%;
-    height: 20%;
+    width: 15%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,16 +77,16 @@ header{
     background-color: var(--cor3);    
     text-decoration: none;
     color: var(--C1P);
-    font-size: 1.5vw;
+    font-size: 2vw;
     transition: 0.3s;    
-    padding: 10px 20px;
-    border-radius: 20px;
-    margin: 20px;
-    align-self: start;
+    padding: 5px 20px;
+    border-radius: 10px;
+    /*margin: 20px;*/
+    /*align-self: start;*/
     font-family: Roboto1;
     box-shadow: -5px 5px 1px black;
-    text-align: center;
-    display: inline-block;
+    /*text-align: center;
+    display: inline-block;*/
     border: 2px solid var(--cor8);
 }
 #D1 a:hover{
@@ -92,30 +95,32 @@ header{
     box-shadow: 0px 0px 20px black;
 }
 #D2{
-    width: 100%;
-    height: 70%;
+    width: 70%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    flex-wrap: nowrap;
+    /*flex-wrap: nowrap;*/
     justify-content: center;
 }
 #D2 h1{
     font-family: FP;
-    font-size: 10vw;
+    font-size: 4.5vw;
     text-align: center;
     color: var(--C1P);
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    flex-direction: row;
     align-items: center;
-    
     text-shadow: 0px 0px 10px var(--C1P);
     font-style: italic;
 }
 #D2 h2{
-    font-family: FS;
+    font-family: FP;
     color: var(--C1P);
-    font-size: 4vw;
+    -webkit-text-stroke: 2px black;
+    margin-bottom: 10px;
+    font-size: 2vw;
     font-style: italic;
 }
 #D2 h3{
@@ -134,21 +139,18 @@ header{
     font-size: 1.5vw;
     width: 70%;
 }
-
-
 .container {
     display: flex;
-    justify-content: center;
+    /*justify-content: space-evenly;*/
     align-items: center;
 }
-
 .card {
   width: 90%;
   max-width: 1000px;
   padding: 20px;
   display: flex;
   flex-direction: row;
-background-image: linear-gradient(45deg, var(--cor7),var(--cor8), var(--cor7));  padding: 15px;
+  background-image: linear-gradient(45deg, var(--cor7),var(--cor8), var(--cor7));  padding: 15px;
   border-radius: 10px;
   box-shadow: 0px 0px 20px var(--cor5);
   border: 6px double var(--VERMELHO);
@@ -157,13 +159,12 @@ background-image: linear-gradient(45deg, var(--cor7),var(--cor8), var(--cor7)); 
   justify-self: center;
   margin: 10px;
 }
-
 .card-img {
   flex: 1;
   max-width: 40%;
 }
-
 .card-img img {
+  color: #960a0a;
   width: 90%;
   height: 90%;
   object-fit: contain;
@@ -171,8 +172,6 @@ background-image: linear-gradient(45deg, var(--cor7),var(--cor8), var(--cor7)); 
   border-radius: 8px;
   filter: brightness(300%);
 }
-
-
 .card-content {
   flex: 2;
   display: flex;
@@ -205,12 +204,14 @@ nav {
   gap: 1rem;
   margin: 20px auto;
 }
-
+.card-body{
+  display: flex;
+  justify-content: center;
+}
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
 .dropbtn {
   background-color: var(--cor3);
   color: white;
@@ -221,7 +222,6 @@ nav {
   cursor: pointer;
   border-radius: 5px;
 }
-
 .dropdown-content {
   display: none;
   position: absolute;
@@ -232,7 +232,6 @@ nav {
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
-
 .dropdown-content a {
   color: var(--C1P);
   font-family: MERRI;
@@ -241,21 +240,17 @@ nav {
   display: block;
   transition: all 0.5s ease;
 }
-
 .dropdown-content a:hover {
   background-color: var(--VERMELHO);
   transform: none;
 }
-
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
 .dropdown:hover .dropbtn {
   background-color: var(--cor3);
   box-shadow: 0px 0px 10px var(--VERMELHO);
 }
-
 #rodape a{
     background-color: var(--cor3);
     color: var(--C1P);
@@ -286,7 +281,7 @@ footer{
     background-color: var(--cor4);
     border-top: 5px double var(--VERMELHO);
     width: 100%;
-    height: 250px;
+    height: 160px;
     padding-bottom: 20px;
     margin-top: 30px;
     border-radius: 60px 60px 0 0;
@@ -294,12 +289,23 @@ footer{
 }
 #rodape{
     width: 100%;
-    height: 100%;
+    /*height: 100%;*/
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-evenly;    
 
+}
+#rodape h2{
+    font-family: FP;
+    font-size: 1.7vw;
+    text-align: center;
+    color: var(--C1P);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 30px;
+    -webkit-text-stroke: 2px black;
 }
 a:hover{
     transform: scale(1.1);
@@ -309,11 +315,11 @@ a:hover{
 }#rodape a{
     background-color: var(--cor3);
     color: var(--C1P);
-    padding: 10px 20px;
+    padding: 7px 15px;
     border-radius:  50px 10px;
     text-decoration: none;
     display: inline-block;
-    font-size: 1vw;
+    /*font-size: 1vw;*/
     transition: all 0.5s;
     font-family: Roboto1;
 }
@@ -321,18 +327,8 @@ a:hover{
     font-family: Roboto1;
     color: var(--C1P);
 }
-#rodape h2{
-    font-family: FP;
-    font-size: 6vw;
-    text-align: center;
-    color: var(--C1P);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 30px;
-    -webkit-text-stroke: 2px black;
-}
-footer{
+
+/*footer{
     background-color: var(--cor4);
     border-top: 5px double var(--VERMELHO);
     width: 100%;
@@ -341,18 +337,4 @@ footer{
     margin-top: 30px;
     border-radius: 60px 60px 0 0;
     box-shadow: 0px 0px 10px var(--VERMELHO);
-}
-#rodape{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-evenly;    
-
-}
-a:hover{
-    transform: scale(1.1);
-    background-color: var(--cor2);
-    box-shadow: 0px 0px 20px black;
-}
+}*/

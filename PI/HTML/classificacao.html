@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
         <title>CLASSIFICAÇÃO</title>
         <link rel="stylesheet" href="../CSS/classificacao.css" type="text/css">
         <link rel="shortcut icon" href="../Midias/Imagens/icone/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-</head>
-<body>
-    <header>
-        <div id="D1">
-            <a href="../PRINCIPAL.html"> VOLTAR </a>
-        </div>
-        <div id="D2">
-            <h1>CLASSIFICAÇÕES</h1>
-            <h2>HIGH-STAKES</h2>
-            <h3>F1</h3>
-            <p>Aqui você poderá ver sobre as classifcações da temporada.</p>
-        </div>
-    </header>
+    </head>
+    <body id="body">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="col-1 align-items-center" id="D1">
+                    <a class="navbar-brand" href="../PRINCIPAL.html"> < </a>
+                </div>
+                <div class="mt-2 col-11 text-center" id="D3">
+                    <h1>CLASSIFICAÇÃO</h1>
+                    <h2>HIGH-STAKES</h2>
+                    <h3>F1</h3>
+                    <!--<p id="text-fs-20">Aqui está a classificação atual dos pilotos e equipes</p>-->
+                </div>
+            </div>
+        </nav>
         <main class="container-fluid p-4" id="classifi">
             <section class="mb-4" id="PC">
                 <h1>TEMPORADA DE 2025</h1>
@@ -36,7 +38,7 @@
                                         <th class="fw-bold text-uppercase">Piloto</th>
                                         <th class="fw-bold text-uppercase">Nacionalidade</th>
                                         <th class="fw-bold text-uppercase">Equipe</th>
-                                        <th class="fw-bold text-uppercase rounded-end">Pontos</th>
+                                        <th class="fw-bold text-uppercase rounded-end pe-0">Pontos</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -45,146 +47,146 @@
                                         <td>Oscar Piastri</td>
                                         <td>AUS</td>
                                         <td>McLaren Mercedes</td>
-                                        <td class="rounded-end">186</td>
+                                        <td class="rounded-end">216</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">2</td>
                                         <td>Lando Norris</td>
                                         <td>GBR</td>
                                         <td>Mclaren Mercedes</td>
-                                        <td class="rounded-end">176</td>
+                                        <td class="rounded-end">201</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">3</td>
                                         <td>Max Verstappen</td>
                                         <td>NED</td>
                                         <td>Red Bull Racing Honda RBPT</td>
-                                        <td class="rounded-end">111</td>
+                                        <td class="rounded-end">155</td>
                                     </tr>
                                         <td class="px-5 rounded-start">4</td>
                                         <td>George Russel</td>
                                         <td>GBR</td>
                                         <td>Mercedes</td>
-                                        <td class="rounded-end">94</td>
+                                        <td class="rounded-end">146</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">5</td>
                                         <td>Charles Leclerc</td>
                                         <td>MON</td>
                                         <td>Ferrari</td>
-                                        <td>94</td>
+                                        <td class="rounded-end">119</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">6</td>
                                         <td>Lewis Hamilton</td>
                                         <td>GBR</td>
                                         <td>Ferrari</td>
-                                        <td>71</td>
+                                        <td class="rounded-end text-start ps-3">91</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">7</td>
                                         <td>Kimi Antonelli</td>
                                         <td>ITA</td>
                                         <td>Mercedes</td>
-                                        <td>48</td>
+                                        <td class="rounded-end text-start ps-3">63</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">8</td>
                                         <td>Alexander Albon</td>
                                         <td>THA</td>
                                         <td>Williams Mercedes</td>
-                                        <td>42</td>
+                                        <td class="rounded-end text-start ps-3">42</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">9</td>
-                                        <td>Isack Hadjar</td>
-                                        <td>FRA</td>
-                                        <td>Racing Bulls Honda RBPT</td>
-                                        <td>21</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">10</td>
                                         <td>Esteban Ocon</td>
                                         <td>FRA</td>
                                         <td>Haas Ferrari</td>
-                                        <td>20</td>
+                                        <td class="rounded-end text-start ps-3">23</td>
                                     </tr>
                                     <tr>
-                                        <td class="px-5 rounded-start">11</td>
+                                        <td class="px-5 rounded-start">10</td>
                                         <td>Nico Hulkenberg</td>
                                         <td>GER</td>
                                         <td>Kick Sauber Ferrari</td>
-                                        <td>16</td>
+                                        <td class="rounded-end text-start ps-3">22</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">11</td>
+                                        <td>Isack Hadjar</td>
+                                        <td>FRA</td>
+                                        <td>Racing Bulls Honda RBPT</td>
+                                        <td class="rounded-end text-start ps-3">21</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">12</td>
                                         <td>Lance Stroll</td>
                                         <td>CAN</td>
                                         <td>Aston Martin Aramco Mercedes</td>
-                                        <td>14</td>
+                                        <td class="rounded-end text-start ps-3">14</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">13</td>
-                                        <td>Carlos Sainz</td>
-                                        <td>ESP</td>
-                                        <td>Williams Mercedes</td>
-                                        <td>12</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">14</td>
-                                        <td>Pierre Gasly</td>
-                                        <td>FRA</td>
-                                        <td>Alpine Renault</td>
-                                        <td>11</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">15</td>
-                                        <td>Yuki Tsunoda</td>
-                                        <td>JPN</td>
-                                        <td>Red Bull Racing Honda RBPT</td>
-                                        <td>10</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">16</td>
-                                        <td>Oliver Bearman</td>
-                                        <td>GBR</td>
-                                        <td>Haas Ferrari</td>
-                                        <td>6</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">17</td>
-                                        <td>Liam Lawson</td>
-                                        <td>NZL</td>
-                                        <td>Racing Bulls Honda RBPT</td>
-                                        <td>4</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">18</td>
                                         <td>Fernando Alonso</td>
                                         <td>ESP</td>
                                         <td>Aston Martin Aramco Mercedes</td>
-                                        <td>2</td>
+                                        <td class="rounded-end text-start ps-3">14</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">14</td>
+                                        <td>Carlos Sainz</td>
+                                        <td>ESP</td>
+                                        <td>Williams Mercedes</td>
+                                        <td class="rounded-end text-start ps-3">13</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">15</td>
+                                        <td>Liam Lawson</td>
+                                        <td>NZL</td>
+                                        <td>Racing Bulls Honda RBPT</td>
+                                        <td class="rounded-end text-start ps-3">12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">16</td>
+                                        <td>Pierre Gasly</td>
+                                        <td>FRA</td>
+                                        <td>Alpine Renault</td>
+                                        <td class="rounded-end text-start ps-3">11</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">17</td>
+                                        <td>Yuki Tsunoda</td>
+                                        <td>JPN</td>
+                                        <td>Red Bull Racing Honda RBPT</td>
+                                        <td class="rounded-end text-start ps-3">10</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">18</td>
+                                        <td>Oliver Bearman</td>
+                                        <td>GBR</td>
+                                        <td>Haas Ferrari</td>
+                                        <td class="rounded-end text-start ps-4">6</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">19</td>
                                         <td>Gabriel Bortoleto</td>
                                         <td>BRA</td>
                                         <td>Kick Sauber Ferrari</td>
-                                        <td>0</td>
+                                        <td class="rounded-end text-start ps-4">4</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">20</td>
-                                        <td>Jack Doohan</td>
-                                        <td>AUS</td>
-                                        <td>Alpine Renault</td>
-                                        <td>0</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="px-5 rounded-start">21</td>
                                         <td>Franco Colapinto</td>
                                         <td>ARG</td>
                                         <td>Alpine Renault</td>
-                                        <td>0</td>
+                                        <td class="rounded-end text-start ps-4">0</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="px-5 rounded-start">21</td>
+                                        <td>Jack Doohan</td>
+                                        <td>AUS</td>
+                                        <td>Alpine Renault</td>
+                                        <td class="rounded-end text-start ps-4">0</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -202,59 +204,59 @@
                                     <tr>
                                         <th class="fw-bold text-uppercase px-5 rounded-start">Pos</th>
                                         <th class="fw-bold text-uppercase">Equipe</th>
-                                        <th class="fw-bold text-uppercase rounded-end">Pontos</th>
+                                        <th class="fw-bold text-uppercase rounded-end text-end px-5">Pontos</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
                                         <td class="px-5 rounded-start">1</td>
-                                        <td>McLaren Mercedes</td>
-                                        <td class="rounded-end">362</td>
+                                        <td>McLaren</td>
+                                        <td class="rounded-end text-end px-5">417</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">2</td>
                                         <td>Ferrari</td>
-                                        <td class="rounded-end">165</td>
+                                        <td class="rounded-end text-end px-5">210</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">3</td>
                                         <td>Mercedes</td>
-                                        <td class="rounded-end">159</td>
+                                        <td class="rounded-end text-end px-5">209</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">4</td>
-                                        <td>Red Bull Racing Honda RBPT</td>
-                                        <td class="rounded-end">144</td>
+                                        <td>Red Bull Racing</td>
+                                        <td class="rounded-end text-end px-5">162</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">5</td>
-                                        <td>Williams Mercedes</td>
-                                        <td class="rounded-end">54</td>
+                                        <td>Williams</td>
+                                        <td class="rounded-end text-end px-5">55</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">6</td>
-                                        <td>Racing Bulls Honda RBPT</td>
-                                        <td class="rounded-end">28</td>
+                                        <td>Racing Bulls</td>
+                                        <td class="rounded-end text-end px-5">36</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">7</td>
-                                        <td>Haas Ferrari</td>
-                                        <td class="rounded-end">26</td>
+                                        <td>Haas</td>
+                                        <td class="rounded-end text-end px-5">29</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">8</td>
-                                        <td>Kick Sauber Ferrari</td>
-                                        <td class="rounded-end">16</td>
+                                        <td>Aston Martin</td>
+                                        <td class="rounded-end text-end px-5">28</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">9</td>
-                                        <td>Astom Martin Aramco Mercedes</td>
-                                        <td class="rounded-end">16</td>
+                                        <td>Kick Sauber</td>
+                                        <td class="rounded-end text-end px-5">26</td>
                                     </tr>
                                     <tr>
                                         <td class="px-5 rounded-start">10</td>
-                                        <td>Alpine Renault</td>
-                                        <td class="rounded-end">11</td>
+                                        <td>Alpine</td>
+                                        <td class="rounded-end text-end px-5">11</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -263,13 +265,16 @@
                 </div>
             </section>
         </main>
-    <footer>
-        <div id="rodape">
-            <h2>HIGH-STAKES F1</h2>
-            <p>Desenvolvido por:</p>
-            <a href="creditos.html">EQUIPE HIGH-STAKES</a>
-            <p>Fatec Marília - 2025</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
-</body>
+        <footer>
+            <div class="container-fluid d-flex flex-row align-items-center justify-content-evenly" id="rodape">
+                <div class="container text-center">
+                    <h3>HIGH-STAKES F1</h3>
+                    <p>Desenvolvido por:</p>
+                    <a href="creditos.html">EQUIPE HIGH-STAKES</a>
+                    <p>Fatec Marília - 2025</p>
+                </div>
+            </div>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+    </body>
+</html>
