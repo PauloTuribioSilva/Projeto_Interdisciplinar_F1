@@ -169,6 +169,7 @@ footer{
 }
 #rodape{
     width: 100%;
+    /*height: 100%;*/
 }
 #rodape p{
     font-family: Roboto1;
@@ -179,8 +180,6 @@ footer{
     /*font-size: 2vw;*/
     text-align: center;
     color: var(--C1P);
-    display: flex;
-    flex-direction: row;
     align-items: center;
     margin-top: 30px;
     -webkit-text-stroke: 2px black;
