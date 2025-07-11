@@ -94,7 +94,6 @@ header div{
 header div p{
     color: var(--C1P);
     font-family: M1;
-    
     font-style: italic;
     letter-spacing: 1px;
     font-size: 2vw;
@@ -119,7 +118,6 @@ header nav{
     width: 100%;
 }
 nav ul{
-    
     height: 100%;
     width: 100%;
     display: flex;
@@ -176,7 +174,6 @@ main{
 }
 #sobre{
     background-image: url(Midias/Imagens/F1WPPSB.png);
-
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
@@ -198,7 +195,7 @@ main{
     text-shadow: 0px 0px 3px black;
     font-family: Roboto1;
     text-align: start;
-    text-indent: calc(3em);
+    text-indent: 3em;
     font-weight: lighter;
     font-size: 1.4vw;
     margin: 20px;
@@ -219,7 +216,7 @@ main{
     text-shadow: 0px 0px 3px black;
     font-family: Roboto1;
     text-align: start;
-    text-indent: calc(3em);
+    text-indent: 3em;
     font-weight: lighter;
     font-size: 1.4vw;
     padding: 20px;
@@ -267,7 +264,7 @@ main{
     text-shadow: 0px 0px 5px black;
     font-family: Roboto1;
     text-align: start;
-    text-indent: calc(3em);
+    text-indent: 3em;
     font-weight: lighter;
     font-size: 1.4vw;
     width: 100%;
@@ -379,7 +376,7 @@ main{
     text-shadow: 0px 0px 5px black;
     font-family: Roboto1;
     text-align: start;
-    text-indent: calc(3em);
+    text-indent: 3em;
     font-weight: lighter;
     font-size: 1.4vw;
     width: 100%;
@@ -424,7 +421,7 @@ main{
     width: 100%;
     padding: 10px;
     text-align: start;
-    text-indent: calc(3em);
+    text-indent: 3em;
     font-weight: lighter;
     font-size: 1.5vw;
     margin-bottom: 30px;
