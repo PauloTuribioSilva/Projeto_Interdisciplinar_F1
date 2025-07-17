@@ -384,7 +384,7 @@ main{
 }
 #classificacao div{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 #classificacao div a{
     background-color: var(--cor3);
