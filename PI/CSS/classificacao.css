@@ -120,20 +120,20 @@ main{
     font-size: 1.7vw;
 }
 #PC{
-    width: 100%;
+    width: auto;
 }
 #PC h1{
     font-family: FP;
     color: var(--VERMELHO);
     text-align: center;
-    font-size: 3em;
+    font-size: xx-large;
     text-shadow: 0px 0px 10px var(--cor6);
 }
 #PC h2{
     font-family: FP;
     color: var(--VERMELHO);
     text-align: center;
-    font-size: 2em;
+    font-size: large;
     text-shadow: 0px 0px 10px var(--cor6);
 }
 .TODOS{

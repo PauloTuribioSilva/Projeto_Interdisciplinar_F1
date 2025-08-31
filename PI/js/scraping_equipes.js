@@ -31,8 +31,8 @@ function gerarHTML(equipes) {
             </div>
           </div>
         </nav>
-        <main class="container-fluid p-4" id="classifi">
-          <section class="mb-4" id="PC">
+        <main class="container-fluid mb-4" id="classifi">
+          <section class="mb-3 mt-3" id="PC">
             <h1>TEMPORADA DE 2025</h1>
             <div class="mb-4">
               <h2>Classificação das Equipes</h2>
@@ -52,11 +52,11 @@ function gerarHTML(equipes) {
 
   equipes.forEach(equipe => {
     htmlContent += `
-      <tr>
-        <td class="px-5 rounded-start">${equipe.position}</td>
-        <td>${equipe.team}</td>
-        <td class="rounded-end text-end px-5">${equipe.points}</td>
-      </tr>`;
+                      <tr>
+                        <td class="px-5 rounded-start">${equipe.position}</td>
+                        <td>${equipe.team}</td>
+                        <td class="rounded-end text-end px-5">${equipe.points}</td>
+                      </tr>`;
   });
 
   htmlContent += `
