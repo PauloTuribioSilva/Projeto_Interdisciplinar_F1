@@ -3,333 +3,153 @@
     <head>
         <meta charset="utf-8">
         <title>CALENDÁRIO</title>
-        <link rel="stylesheet" href="../CSS/data.css" type="text/css">
         <link rel="shortcut icon" href="../Midias/Imagens/icone/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> <!--bootstrap-download-CDN via jsDelivr-->
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="stylesheet" href="../CSS/data.css" type="text/css">
     </head>
     <body id="body">
+        <header class="global-nav">
+            <div class="global-nav__inner">
+                <a class="global-nav__logo" href="../PRINCIPAL.html">HIGH-STAKES <span>F1</span></a>
+                <input type="checkbox" id="global-nav-toggle" class="global-nav__toggle-input visually-hidden">
+                <label for="global-nav-toggle" class="global-nav__toggle-label" aria-label="Abrir menu">&#9776;</label>
+                <ul class="global-nav__links">
+                    <li><a href="../PRINCIPAL.html">INÍCIO</a></li>
+                    <li><a href="corr.html">CIRCUITOS</a></li>
+                    <li><a href="corredores.html">PILOTOS</a></li>
+                    <li><a href="classificacao.html">CLASSIFICAÇÃO</a></li>
+                    <li><a href="data.html" class="is-active">CALENDÁRIO</a></li>
+                    <li><a href="CE.html">EXTRAS</a></li>
+                </ul>
+            </div>
+        </header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="col-1 align-items-center" id="D1">
-                    <a class="navbar-brand" href="../PRINCIPAL.html"> < </a>
-                </div>
-                <div class="mt-2 col-11 text-center" id="D2">
+            <div class="container-fluid">
+                <div class="col-12" id="D2">
+                    <span class="page-kicker">CALENDÁRIO</span>
                     <h1>TEMPORADA 2025</h1>
                     <h2>HIGH-STAKES</h2>
                     <h3>F1</h3>
                 </div>
             </div>
         </nav>
-        <main class="container-fluid p-4" id="datas">
-            <section class="mb-4" id="PC">
-                <h1>Corridas realizadas</h1>
-                <div class="container-fluid">
-                    <div class="row mt-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 d-flex justify-content-center">
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Australian GP</h3>
-                                    <p class="card-text">Albert Park Grand Prix Circuit</p>
-                                    <p class="card-text"><b>MELBOURNE</b></p>
-                                    <p class="card-text">16 de mar</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Chinese GP</h3>
-                                    <p class="card-text">Shanghai International Circuit</p>
-                                    <p class="card-text"><b>SHANGHAI</b></p>
-                                    <p class="card-text">23 de mar</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Japanese GP</h3>
-                                    <p class="card-text">Suzuka Circuit</p>
-                                    <p class="card-text"><b>SUZUKA</b></p>
-                                    <p class="card-text">6 de abr</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Bahrain GP</h3>
-                                    <p class="card-text">Bahrain International Circuit</p>
-                                    <p class="card-text"><b>SHAKHIR</b></p>
-                                    <p class="card-text">13 de abr</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Saudi Arabian GP</h3>
-                                    <p class="card-text">Jeddah Corniche Circuit</p>
-                                    <p class="card-text"><b>JIDÁ</b></p>
-                                    <p class="card-text">20 de abr</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Miami GP</h3>
-                                    <p class="card-text">Miami International Autodrome</p>
-                                    <p class="card-text"><b>MIAMI</b></p>
-                                    <p class="card-text">4 de mai</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">GP Dell'Emilia-Romagna</h3>
-                                    <p class="card-text">Autodromo Enzo Ferrari</p>
-                                    <p class="card-text"><b>SAN MARINO</b></p>
-                                    <p class="card-text">18 de mai</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">GP de Monaco</h3>
-                                    <p class="card-text">Circuit de Monaco</p>
-                                    <p class="card-text"><b>MONTE CARLO</b></p>
-                                    <p class="card-text">25 de mai</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">GP de España</h3>
-                                    <p class="card-text">Circuit de Barcelona</p>
-                                    <p class="card-text"><b>CATALUNYA</b></p>
-                                    <p class="card-text">1 de jun</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">GP do Canada</h3>
-                                    <p class="card-text">Gilles-Villeneuve</p>
-                                    <p class="card-text"><b>MONREAL</b></p>
-                                    <p class="card-text">15 de jun</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Austrian GP</h3>
-                                    <p class="card-text">Red Bill Ring</p>
-                                    <p class="card-text"><b>SPIELBERG</b></p>
-                                    <p class="card-text">29 de jun</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">British GP</h3>
-                                    <p class="card-text">Silverstone Circuit</p>
-                                    <p class="card-text"><b>SILVERSTONE</b></p>
-                                    <p class="card-text">6 de jul</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Belgian GP</h3>
-                                    <p class="card-text">Spa-Francorchamps</p>
-                                    <p class="card-text"><b>SPA-FRANCORCHAMPS</b></p>
-                                    <p class="card-text">27 de jul</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">    
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Hungarian GP</h3>
-                                    <p class="card-text">Hungaroring</p>
-                                    <p class="card-text"><b>BUDAPEST</b></p>
-                                    <p class="card-text">3 de ago</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">Dutch GP</h3>
-                                    <p class="card-text">Circuit Zandvoort</p>
-                                    <p class="card-text"><b>ZANDVOORT</b></p>
-                                    <p class="card-text">31 de ago</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF1">
-                                    <h3 class="card-title">GP D'Italia</h3>
-                                    <p class="card-text">Autodromo Nazionale Monza</p>
-                                    <p class="card-text"><b>MONZA</b></p>
-                                    <p class="card-text">7 de set</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <main id="datas">
+            <section class="season-progress">
+                <span class="page-kicker">TEMPORADA 2025</span>
+                <h1>CALENDÁRIO DA TEMPORADA</h1>
+                <div class="progress-track">
+                    <div class="progress-fill" style="width:66.7%"></div>
+                    <span class="progress-flag">🏁</span>
                 </div>
-                <br>
-                <h1>PRÓXIMAS CORRIDAS</h1>
-                <div class="container-fluid">
-                    <div class="row mt-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 d-flex justify-content-center">
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">Azerbaijan GP</h3>
-                                    <p class="card-text">Baku City Circuit</p>
-                                    <p class="card-text"><b>BAKU</b></p>
-                                    <p class="card-text">19 - 21 de set</p>
-                                    <p class="card-text">8:00 am</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">Singapore GP</h3>
-                                    <p class="card-text">Marina Bay Street Circuit</p>
-                                    <p class="card-text"><b>SINGAPORE</b></p>
-                                    <p class="card-text">3 - 5 de out</p>
-                                    <p class="card-text">9:00 am</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">United States GP</h3>
-                                    <p class="card-text">Circuit of the Americas</p>
-                                    <p class="card-text"><b>AUSTIN</b></p>
-                                    <p class="card-text">17 - 19 de out</p>
-                                    <p class="card-text">4:00 pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">GP do Mexico</h3>
-                                    <p class="card-text">Autodromo Hermanos Rodriguez</p>
-                                    <p class="card-text"><b>MEXICO CITY</b></p>
-                                    <p class="card-text">24 - 26 de out</p>
-                                    <p class="card-text">5:00 pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">GP de São Paulo</h3>
-                                    <p class="card-text">Autodromo Jose Carlos Pace</p>
-                                    <p class="card-text"><b>SÃO PAULO</b></p>
-                                    <p class="card-text">7 - 9 de nov</p>
-                                    <p class="card-text">2:00 pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">Las Vegas GP</h3>
-                                    <p class="card-text">Las Vegas Street Circuit</p>
-                                    <p class="card-text"><b>NEVADA</b></p>
-                                    <p class="card-text">20 - 23 de nov</p>
-                                    <p class="card-text">1:00 am</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">Qatar GP</h3>
-                                    <p class="card-text">Lusail International Circuit</p>
-                                    <p class="card-text"><b>QATAR</b></p>
-                                    <p class="card-text">28 - 30 de nov</p>
-                                    <p class="card-text">1:00 pm</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card">
-                                <div class="card-body INF">
-                                    <h3 class="card-title">Abu Dhabi GP</h3>
-                                    <p class="card-text">Yas Marina Circuit</p>
-                                    <p class="card-text"><b>YAS ISLAND</b></p>
-                                    <p class="card-text">5 - 7 de dez</p>
-                                    <p class="card-text">10:00 am</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                <p class="progress-label">16 de 24 corridas disputadas</p>
+            </section>
+
+            <section class="next-race">
+                <span class="next-race-flag">🇦🇿</span>
+                <div class="next-race-info">
+                    <span class="race-kicker">PRÓXIMA CORRIDA · RODADA 17</span>
+                    <h2>Azerbaijan GP</h2>
+                    <p>Baku City Circuit — Baku</p>
+                </div>
+                <div class="next-race-when">
+                    <span class="next-race-date">19–21 SET</span>
+                    <span class="race-time">8:00 am</span>
+                </div>
+            </section>
+
+            <section class="mb-4" id="PC">
+                <div class="season-rail">
+                    <div class="race-stop done"><span class="race-flag">🇦🇺</span><span class="race-round">01</span><h3>Australian GP</h3><p class="race-city">MELBOURNE</p><span class="race-date">16 de mar</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇨🇳</span><span class="race-round">02</span><h3>Chinese GP</h3><p class="race-city">SHANGHAI</p><span class="race-date">23 de mar</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇯🇵</span><span class="race-round">03</span><h3>Japanese GP</h3><p class="race-city">SUZUKA</p><span class="race-date">6 de abr</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇧🇭</span><span class="race-round">04</span><h3>Bahrain GP</h3><p class="race-city">SHAKHIR</p><span class="race-date">13 de abr</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇸🇦</span><span class="race-round">05</span><h3>Saudi Arabian GP</h3><p class="race-city">JIDÁ</p><span class="race-date">20 de abr</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇺🇸</span><span class="race-round">06</span><h3>Miami GP</h3><p class="race-city">MIAMI</p><span class="race-date">4 de mai</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇮🇹</span><span class="race-round">07</span><h3>GP Dell'Emilia-Romagna</h3><p class="race-city">SAN MARINO</p><span class="race-date">18 de mai</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇲🇨</span><span class="race-round">08</span><h3>GP de Monaco</h3><p class="race-city">MONTE CARLO</p><span class="race-date">25 de mai</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇪🇸</span><span class="race-round">09</span><h3>GP de España</h3><p class="race-city">CATALUNYA</p><span class="race-date">1 de jun</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇨🇦</span><span class="race-round">10</span><h3>GP do Canada</h3><p class="race-city">MONREAL</p><span class="race-date">15 de jun</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇦🇹</span><span class="race-round">11</span><h3>Austrian GP</h3><p class="race-city">SPIELBERG</p><span class="race-date">29 de jun</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇬🇧</span><span class="race-round">12</span><h3>British GP</h3><p class="race-city">SILVERSTONE</p><span class="race-date">6 de jul</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇧🇪</span><span class="race-round">13</span><h3>Belgian GP</h3><p class="race-city">SPA-FRANCORCHAMPS</p><span class="race-date">27 de jul</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇭🇺</span><span class="race-round">14</span><h3>Hungarian GP</h3><p class="race-city">BUDAPEST</p><span class="race-date">3 de ago</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇳🇱</span><span class="race-round">15</span><h3>Dutch GP</h3><p class="race-city">ZANDVOORT</p><span class="race-date">31 de ago</span></div>
+                    <div class="race-stop done"><span class="race-flag">🇮🇹</span><span class="race-round">16</span><h3>GP D'Italia</h3><p class="race-city">MONZA</p><span class="race-date">7 de set</span></div>
+                    <div class="season-now"><span>AGORA</span></div>
+                    <div class="race-stop next"><span class="race-flag">🇦🇿</span><span class="race-round">17</span><h3>Azerbaijan GP</h3><p class="race-city">BAKU</p><span class="race-date">19 - 21 de set</span><span class="race-time">8:00 am</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇸🇬</span><span class="race-round">18</span><h3>Singapore GP</h3><p class="race-city">SINGAPORE</p><span class="race-date">3 - 5 de out</span><span class="race-time">9:00 am</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇺🇸</span><span class="race-round">19</span><h3>United States GP</h3><p class="race-city">AUSTIN</p><span class="race-date">17 - 19 de out</span><span class="race-time">4:00 pm</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇲🇽</span><span class="race-round">20</span><h3>GP do Mexico</h3><p class="race-city">MEXICO CITY</p><span class="race-date">24 - 26 de out</span><span class="race-time">5:00 pm</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇧🇷</span><span class="race-round">21</span><h3>GP de São Paulo</h3><p class="race-city">SÃO PAULO</p><span class="race-date">7 - 9 de nov</span><span class="race-time">2:00 pm</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇺🇸</span><span class="race-round">22</span><h3>Las Vegas GP</h3><p class="race-city">NEVADA</p><span class="race-date">20 - 23 de nov</span><span class="race-time">1:00 am</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇶🇦</span><span class="race-round">23</span><h3>Qatar GP</h3><p class="race-city">QATAR</p><span class="race-date">28 - 30 de nov</span><span class="race-time">1:00 pm</span></div>
+                    <div class="race-stop upcoming"><span class="race-flag">🇦🇪</span><span class="race-round">24</span><h3>Abu Dhabi GP</h3><p class="race-city">YAS ISLAND</p><span class="race-date">5 - 7 de dez</span><span class="race-time">10:00 am</span></div>
                 </div>
             </section>
             <section id="TREINOS">
-                <h1>TREINOS LIVRES E SPRINTS</span> </h1>
-                <!-- <h2>TEMPORADA DE 2025</h2> -->
-                <p class="mt-3">Embora os horários específicos dos treinos livres possam variar conforme o fuso horário local de cada país, o cronograma geral para os finais de semana de corrida é o seguinte:</p>
-                <div class="container-fluid d-flex flex-wrap justify-content-center mt-4 custom-box">
-                    <div class="INFO">
-                        <h3>SEXTA-FEIRA</h3>
-                        <p>Treino Livre 1</p>
-                        <P>Treino Livre 2</P>
-                    </div>
-                    <div class="INFO">
-                        <h3>SÁBADO</h3>
-                        <p>Treino Livre 3</p>
-                        <p>Classificação (Q1, Q2, Q3)</p>
+                <span class="page-kicker">COMO FUNCIONA</span>
+                <h1>Fim de semana de corrida</h1>
+
+                <input type="radio" name="weekend-format" id="tab-normal" class="visually-hidden" checked>
+                <input type="radio" name="weekend-format" id="tab-sprint" class="visually-hidden">
+                <div class="tab-switch">
+                    <label for="tab-normal">Fim de semana padrão</label>
+                    <label for="tab-sprint">Fim de semana Sprint</label>
+                </div>
+
+                <div class="tab-panel panel-normal">
+                    <div class="weekend-steps">
+                        <div class="weekend-step">
+                            <span class="step-icon">🏎️</span>
+                            <span class="step-day">SEXTA</span>
+                            <p>Treino Livre 1</p>
+                            <p>Treino Livre 2</p>
+                        </div>
+                        <div class="weekend-step">
+                            <span class="step-icon">⏱️</span>
+                            <span class="step-day">SÁBADO</span>
+                            <p>Treino Livre 3</p>
+                            <p>Classificação (Q1, Q2, Q3)</p>
+                        </div>
+                        <div class="weekend-step">
+                            <span class="step-icon">🏁</span>
+                            <span class="step-day">DOMINGO</span>
+                            <p>Corrida Principal</p>
+                        </div>
                     </div>
                 </div>
-                <p class="mt-5">Nos finais de semana com formato Sprint, o cronograma é ajustado:</p>  
-                <div class="container-fluid d-flex flex-wrap justify-content-center mt-3 custom-box">
-                    <div class="INFO2">
-                        <h3>SEXTA-FEIRA</h3>
-                        <p>Treino Livre 1</p>
-                        <p>Classificação Sprint (SQ1, SQ2, SQ3)</p>
-                    </div>
-                    <div class="INFO2">
-                        <h3>SÁBADO</h3>
-                        <p>Corrida Sprint</p>
-                        <p>Classificação (Q1, Q2, Q3)</p>
-                    </div>
-                </div> 
-            </section>
-            <section id="CORRIDAS">
-                <h1>CORRIDAS</h1>
-                <div class="container-fluid d-flex flex-wrap justify-content-center mt-5 custom-box">
-                    <div class="INFO3">
-                        <h3>DOMINGO</h3>
-                        <p>Corrida Principal</p>
+                <div class="tab-panel panel-sprint">
+                    <div class="weekend-steps">
+                        <div class="weekend-step">
+                            <span class="step-icon">🏎️</span>
+                            <span class="step-day">SEXTA</span>
+                            <p>Treino Livre 1</p>
+                            <p>Classificação Sprint (SQ1, SQ2, SQ3)</p>
+                        </div>
+                        <div class="weekend-step">
+                            <span class="step-icon">⚡</span>
+                            <span class="step-day">SÁBADO</span>
+                            <p>Corrida Sprint</p>
+                            <p>Classificação (Q1, Q2, Q3)</p>
+                        </div>
+                        <div class="weekend-step">
+                            <span class="step-icon">🏁</span>
+                            <span class="step-day">DOMINGO</span>
+                            <p>Corrida Principal</p>
+                        </div>
                     </div>
                 </div>
+                <p class="mt-3">Os horários específicos dos treinos livres variam conforme o fuso horário local de cada país.</p>
             </section>
         </main>
         <footer>
             <div class="container-fluid d-flex flex-row align-items-center justify-content-evenly" id="rodape">
                 <div class="container text-center">
                     <h3>HIGH-STAKES F1</h3>
-                    <p>Desenvolvido por:</p>
-                    <a href="creditos.html">EQUIPE HIGH-STAKES</a>
-                    <p>Fatec Marília - 2025</p>
+                    <p>Desenvolvido por estudantes da Fatec Marília</p>
+                    <p>2025</p>
                 </div>
             </div>
         </footer>

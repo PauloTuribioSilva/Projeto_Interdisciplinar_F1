@@ -13,18 +13,32 @@ function gerarHTML(pilotos) {
       <head>
         <meta charset="utf-8">
         <title>CLASSIFICAÇÃO PILOTOS</title>
-        <link rel="stylesheet" href="../CSS/classificacao.css" type="text/css">
         <link rel="shortcut icon" href="../Midias/Imagens/icone/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="stylesheet" href="../CSS/classificacao.css" type="text/css">
       </head>
       <body id="body">
+        <header class="global-nav">
+          <div class="global-nav__inner">
+            <a class="global-nav__logo" href="../PRINCIPAL.html">HIGH-STAKES <span>F1</span></a>
+            <input type="checkbox" id="global-nav-toggle" class="global-nav__toggle-input visually-hidden">
+            <label for="global-nav-toggle" class="global-nav__toggle-label" aria-label="Abrir menu">&#9776;</label>
+            <ul class="global-nav__links">
+              <li><a href="../PRINCIPAL.html">INÍCIO</a></li>
+              <li><a href="corr.html">CIRCUITOS</a></li>
+              <li><a href="corredores.html">PILOTOS</a></li>
+              <li><a href="classificacao.html" class="is-active">CLASSIFICAÇÃO</a></li>
+              <li><a href="data.html">CALENDÁRIO</a></li>
+              <li><a href="CE.html">EXTRAS</a></li>
+            </ul>
+          </div>
+        </header>
         <nav class="navbar navbar-expand-lg">
-          <div class="container">
-            <div class="col-1 align-items-center" id="D1">
-              <a class="navbar-brand" href="../PRINCIPAL.html"> < </a>
-            </div>
-            <div class="mt-2 col-11 text-center" id="D3">
+          <div class="container-fluid">
+            <div class="col-12" id="D3">
+              <span class="page-kicker">TEMPORADA 2025</span>
               <h1>CLASSIFICAÇÃO</h1>
               <h2>HIGH-STAKES</h2>
               <h3>F1</h3>
@@ -40,7 +54,8 @@ function gerarHTML(pilotos) {
             <div class="container">
               <div class="row">
                 <div class="container bg-custom p-4">
-                  <table class="table table-striped table-responsive">
+                  <div class="table-responsive">
+                  <table class="table table-striped">
                     <thead class="table-dark">
                       <tr>
                         <th class="fw-bold text-uppercase px-5 rounded-start">Pos</th>
@@ -66,6 +81,7 @@ function gerarHTML(pilotos) {
   htmlContent += `
                     </tbody>
                   </table>
+                  </div>
                 </div>
               </div>
             </div>
@@ -75,9 +91,8 @@ function gerarHTML(pilotos) {
           <div class="container-fluid d-flex flex-row align-items-center justify-content-evenly" id="rodape">
             <div class="container text-center">
               <h3>HIGH-STAKES F1</h3>
-              <p>Desenvolvido por:</p>
-              <a href="creditos.html">EQUIPE HIGH-STAKES</a>
-              <p>Fatec Marília - 2025</p>
+              <p>Desenvolvido por estudantes da Fatec Marília</p>
+              <p>2025</p>
             </div>
           </div>
         </footer>

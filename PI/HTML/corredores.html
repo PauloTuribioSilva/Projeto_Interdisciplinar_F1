@@ -2,18 +2,32 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/corredores.css">
     <link rel="shortcut icon" href="../Midias/Imagens/icone/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PILOTOS</title>
 </head>
 <body>
-    <header>
+    <header class="global-nav">
+        <div class="global-nav__inner">
+            <a class="global-nav__logo" href="../PRINCIPAL.html">HIGH-STAKES <span>F1</span></a>
+            <input type="checkbox" id="global-nav-toggle" class="global-nav__toggle-input visually-hidden">
+            <label for="global-nav-toggle" class="global-nav__toggle-label" aria-label="Abrir menu">&#9776;</label>
+            <ul class="global-nav__links">
+                <li><a href="../PRINCIPAL.html">INÍCIO</a></li>
+                <li><a href="corr.html">CIRCUITOS</a></li>
+                <li><a href="corredores.html" class="is-active">PILOTOS</a></li>
+                <li><a href="classificacao.html">CLASSIFICAÇÃO</a></li>
+                <li><a href="data.html">CALENDÁRIO</a></li>
+                <li><a href="CE.html">EXTRAS</a></li>
+            </ul>
+        </div>
+    </header>
+    <header class="page-hero">
         <div class="container">
-            <div id="D1">
-                <a href="../PRINCIPAL.html"> < </a>
-            </div>
             <div id="D2">
+                <span class="page-kicker">GRID 2025</span>
                 <h1>PILOTOS</h1>
                 <h2>HIGH-STAKES</h2>
                 <h3>F1</h3>
@@ -23,226 +37,197 @@
     </header>
     <main>
         <section id="pista">
-            <div class="AS">
-                <aside>
-                    <a href="#piastri"><img src="../Midias/Imagens/corredores/5.png" alt=""></a>
-                    <a href="#tsunoda"><img src="../Midias/Imagens/corredores/20.png" alt=""></a>
-                    <a href="#albon"><img src="../Midias/Imagens/corredores/14.png" alt=""></a>
-                    <a href="#hamilton"><img src="../Midias/Imagens/corredores/1.png" alt=""></a>
-                    <a href="#lawson"><img src="../Midias/Imagens/corredores/19.png" alt=""></a>
-                </aside>
-                <aside class="SE">
-                    <a href="#bortoleto"><img src="../Midias/Imagens/corredores/17.png" alt=""></a>
-                    <a href="#gasly"><img src="../Midias/Imagens/corredores/11.png" alt=""></a>
-                    <a href="#ocon"><img src="../Midias/Imagens/corredores/12.png" alt=""></a>
-                    <a href="#andrea"><img src="../Midias/Imagens/corredores/7.png" alt=""></a>
-                    <a href="#alonso"><img src="../Midias/Imagens/corredores/9.png" alt=""></a>
-                </aside>
+            <div class="driver-grid">
+                <a href="#peek-piastri"><img src="../Midias/Imagens/corredores/5.png" alt="Oscar Piastri"></a>
+                <a href="#peek-norris"><img src="../Midias/Imagens/corredores/4.png" alt="Lando Norris"></a>
+                <a href="#peek-hamilton"><img src="../Midias/Imagens/corredores/1.png" alt="Lewis Hamilton"></a>
+                <a href="#peek-leclerc"><img src="../Midias/Imagens/corredores/8.png" alt="Charles Leclerc"></a>
+                <a href="#peek-max"><img src="../Midias/Imagens/corredores/2.png" alt="Max Verstappen"></a>
+                <a href="#peek-tsunoda"><img src="../Midias/Imagens/corredores/20.png" alt="Yuki Tsunoda"></a>
+                <a href="#peek-russell"><img src="../Midias/Imagens/corredores/6.png" alt="George Russell"></a>
+                <a href="#peek-andrea"><img src="../Midias/Imagens/corredores/7.png" alt="Andrea Kimi Antonelli"></a>
+                <a href="#peek-alonso"><img src="../Midias/Imagens/corredores/9.png" alt="Fernando Alonso"></a>
+                <a href="#peek-stroll"><img src="../Midias/Imagens/corredores/10.png" alt="Lance Stroll"></a>
+                <a href="#peek-doohan"><img src="../Midias/Imagens/corredores/3.png" alt="Jack Doohan"></a>
+                <a href="#peek-gasly"><img src="../Midias/Imagens/corredores/11.png" alt="Pierre Gasly"></a>
+                <a href="#peek-bearman"><img src="../Midias/Imagens/corredores/13.png" alt="Oliver Bearman"></a>
+                <a href="#peek-ocon"><img src="../Midias/Imagens/corredores/12.png" alt="Esteban Ocon"></a>
+                <a href="#peek-lawson"><img src="../Midias/Imagens/corredores/19.png" alt="Liam Lawson"></a>
+                <a href="#peek-hadjar"><img src="../Midias/Imagens/corredores/18.png" alt="Isack Hadjar"></a>
+                <a href="#peek-albon"><img src="../Midias/Imagens/corredores/14.png" alt="Alex Albon"></a>
+                <a href="#peek-sainz"><img src="../Midias/Imagens/corredores/15.png" alt="Carlos Sainz"></a>
+                <a href="#peek-bortoleto"><img src="../Midias/Imagens/corredores/17.png" alt="Gabriel Bortoleto"></a>
+                <a href="#peek-hulkenberg"><img src="../Midias/Imagens/corredores/16.png" alt="Niko Hulkenberg"></a>
             </div>
-            <div class="AS">
-                <aside>
-                    <a href="#norris"><img src="../Midias/Imagens/corredores/4.png" alt=""></a>
-                    <a href="#max"><img src="../Midias/Imagens/corredores/2.png" alt=""></a>
-                    <a href="#sainz"><img src="../Midias/Imagens/corredores/15.png" alt=""></a>
-                    <a href="#leclerc"><img src="../Midias/Imagens/corredores/8.png" alt=""></a>
-                    <a href="#hadjar"><img src="../Midias/Imagens/corredores/18.png" alt=""></a>
-                </aside>
-                <aside class="SE">
-                    <a href="#hulkenberg"><img src="../Midias/Imagens/corredores/16.png" alt=""></a>
-                    <a href="#doohan"><img src="../Midias/Imagens/corredores/3.png" alt=""></a>
-                    <a href="#bearman"><img src="../Midias/Imagens/corredores/13.png" alt=""></a>
-                    <a href="#russell"><img src="../Midias/Imagens/corredores/6.png" alt=""></a>
-                    <a href="#stroll"><img src="../Midias/Imagens/corredores/10.png" alt=""></a>
-                </aside>                
+            <div class="peek-panel-wrap">
+                <div class="driver-peek mclaren" id="peek-piastri">
+                    <img src="../Midias/Imagens/corredores/piastri.png" alt="Oscar Piastri">
+                    <div class="peek-text">
+                        <span class="peek-team">McLaren</span>
+                        <h3>OSCAR PIASTRI</h3>
+                        <p>Oscar Piastri é um piloto australiano de Fórmula 1 que atualmente corre pela equipe McLaren. Conhecido por seu talento e rápida adaptação, Piastri conquistou títulos nas categorias de base, como Fórmula 3 e Fórmula 2, antes de estrear na F1. Ele é reconhecido por sua consistência, inteligência nas corridas e potencial para se tornar um dos grandes nomes do automobilismo.</p>
+                    </div>
+                </div>
+                <div class="driver-peek mclaren" id="peek-norris">
+                    <img src="../Midias/Imagens/corredores/norris.png" alt="Lando Norris">
+                    <div class="peek-text">
+                        <span class="peek-team">McLaren</span>
+                        <h3>LANDO NORRIS</h3>
+                        <p>Lando Norris é um piloto britânico de Fórmula 1 que compete pela equipe McLaren. Destaca-se por sua habilidade em corridas, consistência e carisma dentro e fora das pistas. Desde sua estreia na F1, Norris conquistou diversos pódios e é considerado um dos jovens talentos mais promissores do grid, sendo admirado por fãs e especialistas do automobilismo.</p>
+                    </div>
+                </div>
+                <div class="driver-peek audi" id="peek-bortoleto">
+                    <img src="../Midias/Imagens/corredores/bortoleto.png" alt="Gabriel Bortoleto">
+                    <div class="peek-text">
+                        <span class="peek-team">Audi</span>
+                        <h3>GABRIEL BORTOLETO</h3>
+                        <p>Gabriel Bortoleto é um piloto brasileiro que se destaca nas categorias de base do automobilismo e atualmente faz parte do programa de desenvolvimento da F1. Reconhecido por sua habilidade, determinação e conquistas em campeonatos como a Fórmula 3, Bortoleto é visto como uma das grandes promessas do Brasil para o futuro da Fórmula 1.</p>
+                    </div>
+                </div>
+                <div class="driver-peek audi" id="peek-hulkenberg">
+                    <img src="../Midias/Imagens/corredores/hulkenberg.png" alt="Niko Hulkenberg">
+                    <div class="peek-text">
+                        <span class="peek-team">Audi</span>
+                        <h3>NIKO HULKENBERG</h3>
+                        <p>Nico Hülkenberg é um piloto alemão de Fórmula 1 conhecido por sua experiência e consistência ao longo dos anos. Estreou na F1 em 2010 e já competiu por diversas equipes, demonstrando habilidade técnica e forte desempenho em classificações. Apesar de ainda não ter conquistado um pódio, Hülkenberg é respeitado no paddock por sua dedicação, profissionalismo e contribuições valiosas para as equipes por onde passou.</p>
+                    </div>
+                </div>
+                <div class="driver-peek ferrari" id="peek-hamilton">
+                    <img src="../Midias/Imagens/corredores/lewishamilton.png" alt="Lewis Hamilton">
+                    <div class="peek-text">
+                        <span class="peek-team">Ferrari</span>
+                        <h3>LEWIS HAMILTON</h3>
+                        <p>Lewis Hamilton é um piloto britânico de Fórmula 1, considerado um dos maiores da história do esporte. Sete vezes campeão mundial, Hamilton é reconhecido por seu talento excepcional, habilidade em ultrapassagens e consistência ao longo das temporadas. Fora das pistas, destaca-se também pelo ativismo em causas sociais e pela influência positiva no automobilismo.</p>
+                    </div>
+                </div>
+                <div class="driver-peek ferrari" id="peek-leclerc">
+                    <img src="../Midias/Imagens/corredores/charleslecrerc.png" alt="Charles Leclerc">
+                    <div class="peek-text">
+                        <span class="peek-team">Ferrari</span>
+                        <h3>CHARLES LECLERC</h3>
+                        <p>Charles Leclerc é um piloto monegasco de Fórmula 1 que compete pela equipe Ferrari. Reconhecido por sua velocidade, talento e determinação, Leclerc conquistou vitórias e poles desde sua estreia na categoria. Ele é considerado um dos principais jovens talentos do grid, sendo admirado por sua habilidade em extrair o máximo do carro e por sua postura competitiva nas pistas.</p>
+                    </div>
+                </div>
+                <div class="driver-peek alpine" id="peek-doohan">
+                    <img src="../Midias/Imagens/corredores/jackdoohan.png" alt="Jack Doohan">
+                    <div class="peek-text">
+                        <span class="peek-team">Alpine</span>
+                        <h3>JACK DOOHAN</h3>
+                        <p>Jack Doohan é um piloto australiano de automobilismo que integra o programa de jovens talentos da Alpine. Filho do lendário motociclista Mick Doohan, Jack se destacou nas categorias de base, especialmente na Fórmula 2, onde demonstrou velocidade, técnica e grande potencial. Ele é visto como uma das promessas para o futuro da Fórmula 1, chamando atenção por sua dedicação e evolução constante nas pistas.</p>
+                    </div>
+                </div>
+                <div class="driver-peek alpine" id="peek-gasly">
+                    <img src="../Midias/Imagens/corredores/pierregasly.png" alt="Pierre Gasly">
+                    <div class="peek-text">
+                        <span class="peek-team">Alpine</span>
+                        <h3>PIERRE GASLY</h3>
+                        <p>Pierre Gasly é um piloto francês de Fórmula 1 que atualmente corre pela equipe Alpine. Gasly é conhecido por sua velocidade, resiliência e capacidade de superar desafios, tendo conquistado sua primeira vitória na F1 no Grande Prêmio da Itália de 2020. Ele se destaca por sua determinação, talento e por ser uma peça importante no desenvolvimento das equipes por onde passa.</p>
+                    </div>
+                </div>
+                <div class="driver-peek oracle" id="peek-max">
+                    <img src="../Midias/Imagens/corredores/max.png" alt="Max Verstappen">
+                    <div class="peek-text">
+                        <span class="peek-team">Oracle Red Bull</span>
+                        <h3>MAX VERSTAPPEN</h3>
+                        <p>Max Verstappen é um piloto neerlandês de Fórmula 1 que compete pela equipe Red Bull Racing. Conhecido por sua agressividade, talento e determinação, Verstappen tornou-se o campeão mundial mais jovem da história da categoria. Ele se destaca por suas ultrapassagens ousadas, domínio em diferentes condições de pista e por ser um dos principais protagonistas da F1 atual.</p>
+                    </div>
+                </div>
+                <div class="driver-peek oracle" id="peek-tsunoda">
+                    <img src="../Midias/Imagens/corredores/yukitsunoda.png" alt="Yuki Tsunoda">
+                    <div class="peek-text">
+                        <span class="peek-team">Oracle Red Bull</span>
+                        <h3>YUKI TSUNODA</h3>
+                        <p>Yuki Tsunoda é um piloto japonês de Fórmula 1 que compete pela equipe AlphaTauri. Conhecido por sua velocidade, agressividade e personalidade marcante, Tsunoda rapidamente chamou atenção no grid. Ele se destaca por sua habilidade em ultrapassagens e por representar uma nova geração de talentos asiáticos na F1, sendo admirado por sua dedicação e evolução constante.</p>
+                    </div>
+                </div>
+                <div class="driver-peek mercedes" id="peek-russell">
+                    <img src="../Midias/Imagens/corredores/georgerussell.png" alt="George Russell">
+                    <div class="peek-text">
+                        <span class="peek-team">Mercedes</span>
+                        <h3>GEORGE RUSSELL</h3>
+                        <p>George Russell é um piloto britânico de Fórmula 1 que compete pela equipe Mercedes. Reconhecido por sua velocidade, consistência e inteligência nas corridas, Russell se destacou nas categorias de base e rapidamente ganhou respeito no grid da F1. Ele é visto como um dos principais talentos da nova geração, demonstrando potencial para conquistar grandes resultados e títulos no futuro.</p>
+                    </div>
+                </div>
+                <div class="driver-peek mercedes" id="peek-andrea">
+                    <img src="../Midias/Imagens/corredores/andreakim.png" alt="Andrea Kimi Antonelli">
+                    <div class="peek-text">
+                        <span class="peek-team">Mercedes</span>
+                        <h3>ANDREA KIM</h3>
+                        <p>Andrea Kimi Antonelli é um jovem piloto italiano considerado uma das maiores promessas do automobilismo mundial. Integrante do programa de desenvolvimento da Mercedes, Antonelli se destacou nas categorias de base, conquistando títulos e demonstrando grande talento, velocidade e maturidade nas pistas. Sua rápida ascensão e desempenho consistente o colocam como um nome forte para o futuro da Fórmula 1.</p>
+                    </div>
+                </div>
+                <div class="driver-peek aston" id="peek-alonso">
+                    <img src="../Midias/Imagens/corredores/fernandoalonso.png" alt="Fernando Alonso">
+                    <div class="peek-text">
+                        <span class="peek-team">Aston Martin</span>
+                        <h3>FERNANDO ALONSO</h3>
+                        <p>Fernando Alonso é um piloto espanhol de Fórmula 1, bicampeão mundial e reconhecido como um dos mais talentosos e experientes do grid. Com uma carreira marcada por vitórias históricas, Alonso é admirado por sua habilidade técnica, inteligência estratégica e determinação nas pistas. Ele já competiu por diversas equipes e é respeitado por sua longevidade e paixão pelo automobilismo.</p>
+                    </div>
+                </div>
+                <div class="driver-peek aston" id="peek-stroll">
+                    <img src="../Midias/Imagens/corredores/lancestroll.png" alt="Lance Stroll">
+                    <div class="peek-text">
+                        <span class="peek-team">Aston Martin</span>
+                        <h3>LANCE STROLL</h3>
+                        <p>Lance Stroll é um piloto canadense de Fórmula 1 que compete pela equipe Aston Martin. Filho do empresário Lawrence Stroll, Lance estreou na F1 em 2017 e já conquistou pódios e uma pole position. Ele é reconhecido por sua habilidade em condições adversas, resiliência e por contribuir para o desenvolvimento da equipe ao longo das temporadas.</p>
+                    </div>
+                </div>
+                <div class="driver-peek haas" id="peek-bearman">
+                    <img src="../Midias/Imagens/corredores/oliverbearman.png" alt="Oliver Bearman">
+                    <div class="peek-text">
+                        <span class="peek-team">Haas</span>
+                        <h3>OLIVER BEARMAN</h3>
+                        <p>Oliver Bearman é um jovem piloto britânico de Fórmula 1 que integra a equipe Haas. Destacado por seu desempenho nas categorias de base, Bearman conquistou títulos e chamou atenção pelo talento, velocidade e maturidade em pista. Considerado uma das grandes promessas do automobilismo, ele é visto como um nome de futuro para a F1, demonstrando potencial para crescer e alcançar grandes resultados na categoria.</p>
+                    </div>
+                </div>
+                <div class="driver-peek haas" id="peek-ocon">
+                    <img src="../Midias/Imagens/corredores/estebanocon.png" alt="Esteban Ocon">
+                    <div class="peek-text">
+                        <span class="peek-team">Haas</span>
+                        <h3>ESTEBAN OCON</h3>
+                        <p>Esteban Ocon é um piloto francês de Fórmula 1 que atualmente compete pela equipe Haas. Conhecido por sua determinação, consistência e habilidade em disputas roda a roda, Ocon conquistou sua primeira vitória na F1 no Grande Prêmio da Hungria de 2021. Ele é reconhecido por sua resiliência, trabalho em equipe e por ser um competidor forte em diferentes condições de corrida.</p>
+                    </div>
+                </div>
+                <div class="driver-peek rb" id="peek-lawson">
+                    <img src="../Midias/Imagens/corredores/liamlawson.png" alt="Liam Lawson">
+                    <div class="peek-text">
+                        <span class="peek-team">Racing Bulls</span>
+                        <h3>LIAM LAWSON</h3>
+                        <p>Liam Lawson é um piloto neozelandês de Fórmula 1 que integra a equipe Racing Bulls. Reconhecido por sua velocidade, agressividade e desempenho consistente nas categorias de base, Lawson impressionou em suas oportunidades na F1, mostrando maturidade e habilidade em situações desafiadoras. Ele é visto como uma das promessas do automobilismo, com potencial para conquistar resultados expressivos no futuro da categoria.</p>
+                    </div>
+                </div>
+                <div class="driver-peek rb" id="peek-hadjar">
+                    <img src="../Midias/Imagens/corredores/isackhadjar.png" alt="Isack Hadjar">
+                    <div class="peek-text">
+                        <span class="peek-team">Racing Bulls</span>
+                        <h3>ISACK HADJAR</h3>
+                        <p>Isack Hadjar é um piloto francês de Fórmula 1 que integra a equipe Racing Bulls. Destacado por sua rápida ascensão nas categorias de base, Hadjar é reconhecido por sua velocidade, agressividade e capacidade de adaptação. Ele é visto como uma das jovens promessas do automobilismo, chamando atenção por seu desempenho consistente e potencial para crescer na elite da F1.</p>
+                    </div>
+                </div>
+                <div class="driver-peek williams" id="peek-albon">
+                    <img src="../Midias/Imagens/corredores/alexalbon.png" alt="Alex Albon">
+                    <div class="peek-text">
+                        <span class="peek-team">Williams</span>
+                        <h3>ALEX ALBON</h3>
+                        <p>Alex Albon é um piloto tailandês-britânico de Fórmula 1 que atualmente corre pela equipe Williams. Conhecido por sua resiliência, habilidade em ultrapassagens e capacidade de adaptação, Albon já passou por equipes como Toro Rosso e Red Bull. Ele se destaca por sua consistência, trabalho em equipe e por conquistar pontos importantes para a Williams, sendo reconhecido como um dos pilotos mais talentosos e determinados do grid.</p>
+                    </div>
+                </div>
+                <div class="driver-peek williams" id="peek-sainz">
+                    <img src="../Midias/Imagens/corredores/carlossainz.png" alt="Carlos Sainz">
+                    <div class="peek-text">
+                        <span class="peek-team">Williams</span>
+                        <h3>CARLOS SAINZ</h3>
+                        <p>Carlos Sainz é um piloto espanhol de Fórmula 1 que atualmente compete pela equipe Williams. Conhecido por sua consistência, inteligência estratégica e habilidade em extrair o máximo do carro, Sainz conquistou vitórias e pódios ao longo de sua carreira. Ele é reconhecido por sua dedicação, trabalho em equipe e por ser um dos pilotos mais completos e respeitados do grid.</p>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="equipe mclaren">
-            <h2>McLaren</h2>
-            <div class="corredor">
-                <img src="../Midias/Imagens/corredores/piastri.png" alt="">
-                <aside id="piastri">
-                    <h3>OSCAR PIASTRI</h3>
-                    <p>Oscar Piastri é um piloto australiano de Fórmula 1 que atualmente corre pela equipe McLaren. Conhecido por seu talento e rápida adaptação, Piastri conquistou títulos nas categorias de base, como Fórmula 3 e Fórmula 2, antes de estrear na F1. Ele é reconhecido por sua consistência, inteligência nas corridas e potencial para se tornar um dos grandes nomes do automobilismo.</p>
-                </aside>
-            </div>
-            <div class="corredor">
-                <img src="../Midias/Imagens/corredores/norris.png" alt="">
-                <aside id="norris">
-                    <h3>LANDO NORRIS</h3>
-                    <p>Lando Norris é um piloto britânico de Fórmula 1 que compete pela equipe McLaren. Destaca-se por sua habilidade em corridas, consistência e carisma dentro e fora das pistas. Desde sua estreia na F1, Norris conquistou diversos pódios e é considerado um dos jovens talentos mais promissores do grid, sendo admirado por fãs e especialistas do automobilismo.</p>
-                </aside>
-            </div>
-        </section>
-        <section class="equipe audi">
-            <h2>AUDI</h2>
-            <div class="corredor">
-                <img src="../Midias/Imagens/corredores/bortoleto.png" alt="">
-                <aside id="bortoleto">
-                    <h3>GABRIEL BORTOLETO</h3>
-                    <p>Gabriel Bortoleto é um piloto brasileiro que se destaca nas categorias de base do automobilismo e atualmente faz parte do programa de desenvolvimento da F1. Reconhecido por sua habilidade, determinação e conquistas em campeonatos como a Fórmula 3, Bortoleto é visto como uma das grandes promessas do Brasil para o futuro da Fórmula 1.</p>
-                </aside>
-            </div>
-            <div class="corredor">
-                <img src="../Midias/Imagens/corredores/hulkenberg.png" alt="">
-                <aside id="hulkenberg">
-                    <h3>NIKO HULKENBERG</h3>
-                    <p>Nico Hülkenberg é um piloto alemão de Fórmula 1 conhecido por sua experiência e consistência ao longo dos anos. Estreou na F1 em 2010 e já competiu por diversas equipes, demonstrando habilidade técnica e forte desempenho em classificações. Apesar de ainda não ter conquistado um pódio, Hülkenberg é respeitado no paddock por sua dedicação, profissionalismo e contribuições valiosas para as equipes por onde passou.</p>
-                </aside>
-            </div>
-        </section>
-    <section class="equipe ferrari">
-        <h2>FERRARI</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/lewishamilton.png" alt="">
-            <aside id="hamilton">
-                <h3>LEWIS HAMILTON</h3>
-                <p>Lewis Hamilton é um piloto britânico de Fórmula 1, considerado um dos maiores da história do esporte. Sete vezes campeão mundial, Hamilton é reconhecido por seu talento excepcional, habilidade em ultrapassagens e consistência ao longo das temporadas. Fora das pistas, destaca-se também pelo ativismo em causas sociais e pela influência positiva no automobilismo.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/charleslecrerc.png" alt="">
-            <aside id="leclerc">
-                <h3>CHARLES LECLERC</h3>
-                <p>Charles Leclerc é um piloto monegasco de Fórmula 1 que compete pela equipe Ferrari. Reconhecido por sua velocidade, talento e determinação, Leclerc conquistou vitórias e poles desde sua estreia na categoria. Ele é considerado um dos principais jovens talentos do grid, sendo admirado por sua habilidade em extrair o máximo do carro e por sua postura competitiva nas pistas.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe alpine">
-        <h2>ALPINE</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/jackdoohan.png" alt="">
-            <aside id="doohan">
-                <h3>JACK DOOHAN</h3>
-                <p>Jack Doohan é um piloto australiano de automobilismo que integra o programa de jovens talentos da Alpine. Filho do lendário motociclista Mick Doohan, Jack se destacou nas categorias de base, especialmente na Fórmula 2, onde demonstrou velocidade, técnica e grande potencial. Ele é visto como uma das promessas para o futuro da Fórmula 1, chamando atenção por sua dedicação e evolução constante nas pistas.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/pierregasly.png" alt="">
-            <aside id="gasly">
-                <h3>PIERRE GASLY</h3>
-                <p>Pierre Gasly é um piloto francês de Fórmula 1 que atualmente corre pela equipe Alpine. Gasly é conhecido por sua velocidade, resiliência e capacidade de superar desafios, tendo conquistado sua primeira vitória na F1 no Grande Prêmio da Itália de 2020. Ele se destaca por sua determinação, talento e por ser uma peça importante no desenvolvimento das equipes por onde passa.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe oracle">
-        <h2>ORACLE</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/max.png" alt="">
-            <aside id="max">
-                <h3>MAX VERSTAPPEN</h3>
-                <p>Max Verstappen é um piloto neerlandês de Fórmula 1 que compete pela equipe Red Bull Racing. Conhecido por sua agressividade, talento e determinação, Verstappen tornou-se o campeão mundial mais jovem da história da categoria. Ele se destaca por suas ultrapassagens ousadas, domínio em diferentes condições de pista e por ser um dos principais protagonistas da F1 atual.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/yukitsunoda.png" alt="">
-            <aside id="tsunoda">
-                <h3>YUKI TSUNODA</h3>
-                <p>Yuki Tsunoda é um piloto japonês de Fórmula 1 que compete pela equipe AlphaTauri. Conhecido por sua velocidade, agressividade e personalidade marcante, Tsunoda rapidamente chamou atenção no grid. Ele se destaca por sua habilidade em ultrapassagens e por representar uma nova geração de talentos asiáticos na F1, sendo admirado por sua dedicação e evolução constante.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe mercedes">
-        <h2>MERCEDES</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/georgerussell.png" alt="">
-            <aside id="russell">
-                <h3>GEORGE RUSSELL</h3>
-                <p>George Russell é um piloto britânico de Fórmula 1 que compete pela equipe Mercedes. Reconhecido por sua velocidade, consistência e inteligência nas corridas, Russell se destacou nas categorias de base e rapidamente ganhou respeito no grid da F1. Ele é visto como um dos principais talentos da nova geração, demonstrando potencial para conquistar grandes resultados e títulos no futuro.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/andreakim.png" alt="">
-            <aside id="andrea">
-                <h3>ANDREA KIM</h3>
-                <p>Andrea Kimi Antonelli é um jovem piloto italiano considerado uma das maiores promessas do automobilismo mundial. Integrante do programa de desenvolvimento da Mercedes, Antonelli se destacou nas categorias de base, conquistando títulos e demonstrando grande talento, velocidade e maturidade nas pistas. Sua rápida ascensão e desempenho consistente o colocam como um nome forte para o futuro da Fórmula 1.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe aston">
-        <h2>ASTON MARTIN</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/fernandoalonso.png" alt="">
-            <aside id="alonso">
-                <h3>FERNANDO ALONSO</h3>
-                <p>Fernando Alonso é um piloto espanhol de Fórmula 1, bicampeão mundial e reconhecido como um dos mais talentosos e experientes do grid. Com uma carreira marcada por vitórias históricas, Alonso é admirado por sua habilidade técnica, inteligência estratégica e determinação nas pistas. Ele já competiu por diversas equipes e é respeitado por sua longevidade e paixão pelo automobilismo.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/lancestroll.png" alt="">
-            <aside id="stroll">
-                <h3>LANCE STROLL</h3>
-                <p>Lance Stroll é um piloto canadense de Fórmula 1 que compete pela equipe Aston Martin. Filho do empresário Lawrence Stroll, Lance estreou na F1 em 2017 e já conquistou pódios e uma pole position. Ele é reconhecido por sua habilidade em condições adversas, resiliência e por contribuir para o desenvolvimento da equipe ao longo das temporadas.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe haas">
-    <h2>HAAS</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/oliverbearman.png" alt="">
-            <aside id="bearman">
-                <h3>OLIVER BEARMAN</h3>
-                <p>Oliver Bearman é um jovem piloto britânico de Fórmula 1 que integra a equipe Haas. Destacado por seu desempenho nas categorias de base, Bearman conquistou títulos e chamou atenção pelo talento, velocidade e maturidade em pista. Considerado uma das grandes promessas do automobilismo, ele é visto como um nome de futuro para a F1, demonstrando potencial para crescer e alcançar grandes resultados na categoria.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/estebanocon.png" alt="">
-            <aside id="ocon">
-                <h3>ESTEBAN OCON</h3>
-                <p>Esteban Ocon é um piloto francês de Fórmula 1 que atualmente compete pela equipe Haas. Conhecido por sua determinação, consistência e habilidade em disputas roda a roda, Ocon conquistou sua primeira vitória na F1 no Grande Prêmio da Hungria de 2021. Ele é reconhecido por sua resiliência, trabalho em equipe e por ser um competidor forte em diferentes condições de corrida.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe rb">
-        <h2>RACING BULLS</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/liamlawson.png" alt="">
-            <aside id="lawson">
-                <h3>LIAM LAWSON</h3>
-                <p>Liam Lawson é um piloto neozelandês de Fórmula 1 que integra a equipe Racing Bulls. Reconhecido por sua velocidade, agressividade e desempenho consistente nas categorias de base, Lawson impressionou em suas oportunidades na F1, mostrando maturidade e habilidade em situações desafiadoras. Ele é visto como uma das promessas do automobilismo, com potencial para conquistar resultados expressivos no futuro da categoria.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/isackhadjar.png" alt="">
-            <aside id="hadjar">
-                <h3>ISACK HADJAR</h3>
-                <p>Isack Hadjar é um piloto francês de Fórmula 1 que integra a equipe Racing Bulls. Destacado por sua rápida ascensão nas categorias de base, Hadjar é reconhecido por sua velocidade, agressividade e capacidade de adaptação. Ele é visto como uma das jovens promessas do automobilismo, chamando atenção por seu desempenho consistente e potencial para crescer na elite da F1.</p>
-            </aside>
-        </div>
-    </section>
-    <section class="equipe williams">
-        <h2>WILLIAMS</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/alexalbon.png" alt="">
-            <aside id="albon">
-                <h3>ALEX ALBON</h3>
-                <p>Alex Albon é um piloto tailandês-britânico de Fórmula 1 que atualmente corre pela equipe Williams. Conhecido por sua resiliência, habilidade em ultrapassagens e capacidade de adaptação, Albon já passou por equipes como Toro Rosso e Red Bull. Ele se destaca por sua consistência, trabalho em equipe e por conquistar pontos importantes para a Williams, sendo reconhecido como um dos pilotos mais talentosos e determinados do grid.</p>
-            </aside>
-        </div>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/carlossainz.png" alt="">
-            <aside id="sainz">
-                <h3>CARLOS SAINZ</h3>
-                <p>Carlos Sainz é um piloto espanhol de Fórmula 1 que atualmente compete pela equipe Williams. Conhecido por sua consistência, inteligência estratégica e habilidade em extrair o máximo do carro, Sainz conquistou vitórias e pódios ao longo de sua carreira. Ele é reconhecido por sua dedicação, trabalho em equipe e por ser um dos pilotos mais completos e respeitados do grid.</p>
-            </aside>
-        </div>
-    </section>
-        <section class="equipe que">
-        <h2>2026</h2>
-        <div class="corredor">
-            <img src="../Midias/Imagens/corredores/novo.png" alt="">
-            <aside id="albon">
-                <h3>?</h3>
-                <p>em 2026 uma nova equipe, CADILLAC, se junta ao esporte</p>
-            </aside>
-        </div>
-    </section>
     </main>
     <footer>
         <div id="rodape">
             <h2>HIGH-STAKES F1</h2>
-            <p>Desenvolvido por:</p>
-            <a href="creditos.html">EQUIPE HIGH-STAKES</a>
-            <p>Fatec Marília - 2025</p>
+            <p>Desenvolvido por estudantes da Fatec Marília</p>
+            <p>2025</p>
         </div>
     </footer>
 </body>

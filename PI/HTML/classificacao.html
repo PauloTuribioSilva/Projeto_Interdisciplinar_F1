@@ -3,36 +3,76 @@
     <head>
         <meta charset="utf-8">
         <title>CLASSIFICAÇÃO</title>
-        <link rel="stylesheet" href="../CSS/classificacao.css" type="text/css">
         <link rel="shortcut icon" href="../Midias/Imagens/icone/favicon.ico" type="image/x-icon">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/global.css">
+        <link rel="stylesheet" href="../CSS/classificacao.css" type="text/css">
     </head>
     <body id="body">
+        <header class="global-nav">
+            <div class="global-nav__inner">
+                <a class="global-nav__logo" href="../PRINCIPAL.html">HIGH-STAKES <span>F1</span></a>
+                <input type="checkbox" id="global-nav-toggle" class="global-nav__toggle-input visually-hidden">
+                <label for="global-nav-toggle" class="global-nav__toggle-label" aria-label="Abrir menu">&#9776;</label>
+                <ul class="global-nav__links">
+                    <li><a href="../PRINCIPAL.html">INÍCIO</a></li>
+                    <li><a href="corr.html">CIRCUITOS</a></li>
+                    <li><a href="corredores.html">PILOTOS</a></li>
+                    <li><a href="classificacao.html" class="is-active">CLASSIFICAÇÃO</a></li>
+                    <li><a href="data.html">CALENDÁRIO</a></li>
+                    <li><a href="CE.html">EXTRAS</a></li>
+                </ul>
+            </div>
+        </header>
         <nav class="navbar navbar-expand-lg">
-            <div class="container">
-                <div class="col-1 align-items-center" id="D1">
-                    <a class="navbar-brand" href="../PRINCIPAL.html"> < </a>
-                </div>
-                <div class="mt-2 col-11 text-center" id="D3">
+            <div class="container-fluid">
+                <div class="col-12" id="D3">
+                    <span class="page-kicker">TEMPORADA 2025</span>
                     <h1>CLASSIFICAÇÃO</h1>
                     <h2>HIGH-STAKES</h2>
                     <h3>F1</h3>
-                    <!--<p id="text-fs-20">Aqui está a classificação atual dos pilotos e equipes</p>-->
                 </div>
             </div>
         </nav>
         <main class="container-fluid p-4" id="classifi">
             <section class="mb-4" id="PC">
-                <h1>TEMPORADA DE 2025</h1>
-                <div class="mb-4">
-                    <h2>Classificação dos Pilotos</h2>
+                <span class="page-kicker">TEMPORADA DE 2025</span>
+                <h1>CLASSIFICAÇÃO GERAL</h1>
+
+                <input type="radio" name="standings-view" id="tab-pilotos" class="visually-hidden" checked>
+                <input type="radio" name="standings-view" id="tab-equipes" class="visually-hidden">
+                <div class="tab-switch">
+                    <label for="tab-pilotos">Pilotos</label>
+                    <label for="tab-equipes">Equipes</label>
                 </div>
+
+                <section class="tab-panel panel-pilotos">
+                    <div class="podium">
+                        <div class="podium-card p2 mclaren">
+                            <span class="podium-pos">2</span>
+                            <h3>Lando Norris</h3>
+                            <p class="podium-team">McLaren Mercedes</p>
+                            <span class="podium-pts">226 PTS</span>
+                        </div>
+                        <div class="podium-card p1 mclaren">
+                            <span class="podium-pos">1</span>
+                            <h3>Oscar Piastri</h3>
+                            <p class="podium-team">McLaren Mercedes</p>
+                            <span class="podium-pts">234 PTS</span>
+                        </div>
+                        <div class="podium-card p3 oracle">
+                            <span class="podium-pos">3</span>
+                            <h3>Max Verstappen</h3>
+                            <p class="podium-team">Red Bull Racing Honda RBPT</p>
+                            <span class="podium-pts">165 PTS</span>
+                        </div>
+                    </div>
                 <div class="container">
                     <div class="row">
                         <div class="table-responsive">
                             <div class="container bg-custom p-4">
-                            <table class="table table-striped table-responsive">
+                            <table class="table table-striped">
                                 <thead class="table-dark">
                                     <tr>
                                         <th class="fw-bold text-uppercase px-5 rounded-start">Pos</th>
@@ -195,13 +235,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-5">
-                    <h2 class="mb-4">Classificação das Equipes</h2>
-                </div>
+                </section>
+
+                <section class="tab-panel panel-equipes">
+                    <div class="podium">
+                        <div class="podium-card p2 ferrari">
+                            <span class="podium-pos">2</span>
+                            <h3>Ferrari</h3>
+                            <span class="podium-pts">222 PTS</span>
+                        </div>
+                        <div class="podium-card p1 mclaren">
+                            <span class="podium-pos">1</span>
+                            <h3>McLaren</h3>
+                            <span class="podium-pts">460 PTS</span>
+                        </div>
+                        <div class="podium-card p3 mercedes">
+                            <span class="podium-pos">3</span>
+                            <h3>Mercedes</h3>
+                            <span class="podium-pts">210 PTS</span>
+                        </div>
+                    </div>
                 <div class="container">
                     <div class="table-responsive">
                         <div class="container bg-custom p-4">
-                            <table class="table table-striped table-responsive">
+                            <table class="table table-striped">
                                 <thead class="table-dark">
                                     <tr>
                                         <th class="fw-bold text-uppercase px-5 rounded-start">Pos</th>
@@ -265,15 +322,15 @@
                         </div>
                     </div>
                 </div>
+                </section>
             </section>
         </main>
         <footer>
             <div class="container-fluid d-flex flex-row align-items-center justify-content-evenly" id="rodape">
                 <div class="container text-center">
                     <h3>HIGH-STAKES F1</h3>
-                    <p>Desenvolvido por:</p>
-                    <a href="creditos.html">EQUIPE HIGH-STAKES</a>
-                    <p>Fatec Marília - 2025</p>
+                    <p>Desenvolvido por estudantes da Fatec Marília</p>
+                    <p>2025</p>
                 </div>
             </div>
         </footer>

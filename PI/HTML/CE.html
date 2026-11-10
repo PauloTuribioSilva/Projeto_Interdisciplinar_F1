@@ -2,63 +2,99 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../CSS/global.css">
     <link rel="stylesheet" href="../CSS/CE.css">
     <link rel="shortcut icon" href="../Midias/Imagens/icone/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXTRAS</title>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div id="D1">
-                <a href="../PRINCIPAL.html"> < </a>
-            </div>
-            <div id="D2">
-                <h1>EXTRAS</h1>
-                <h2>HIGH-STAKES</h2>
-                <h3>F1</h3>
-                <p>Aqui você podera ver conteudos extras, como o filme e podcasts.</p>
-            </div>
+    <header class="global-nav global-nav--onscreen">
+        <div class="global-nav__inner">
+            <a class="global-nav__logo" href="../PRINCIPAL.html">HIGH-STAKES <span>F1</span></a>
+            <input type="checkbox" id="global-nav-toggle" class="global-nav__toggle-input visually-hidden">
+            <label for="global-nav-toggle" class="global-nav__toggle-label" aria-label="Abrir menu">&#9776;</label>
+            <ul class="global-nav__links">
+                <li><a href="../PRINCIPAL.html">INÍCIO</a></li>
+                <li><a href="corr.html">CIRCUITOS</a></li>
+                <li><a href="corredores.html">PILOTOS</a></li>
+                <li><a href="classificacao.html">CLASSIFICAÇÃO</a></li>
+                <li><a href="data.html">CALENDÁRIO</a></li>
+                <li><a href="CE.html" class="is-active">EXTRAS</a></li>
+            </ul>
         </div>
     </header>
+
+    <header class="cine-hero">
+        <div class="cine-bar cine-bar--top"></div>
+        <div class="cine-bar cine-bar--bottom"></div>
+        <div class="cine-grain"></div>
+        <div class="cine-vignette"></div>
+        <div class="cine-hero__inner">
+            <span class="cine-tag">★ ★ ★ ★ ★&nbsp; AGORA EM CARTAZ</span>
+            <h1 class="cine-title"><span>FÓRMULA</span><span class="cine-title__num">1</span></h1>
+            <p class="cine-tagline">Trinta anos depois do acidente que quase o matou, o piloto mais talentoso que a F1 já viu tem uma última chance de prová-lo tudo.</p>
+            <a href="#FILME" class="cine-cta">▾ VER SINOPSE &amp; TRAILER</a>
+        </div>
+    </header>
+
     <main>
-        <section id="FILME">
-            <h2 id="fi">FILME</h2>
-            <div id="poster">
-                <img src="../Midias/Imagens/poster1.png" alt="">
-            </div>
-            <div id="poster2">
-                <div id="sino">
-                    <h2>FÓRMULA 1</h2>
-                    <p>Na década de 1990, Sonny Hayes era o piloto mais promissor da Fórmula 1 até que um acidente na pista quase encerrou sua carreira. Trinta anos depois, o proprietário de uma equipe de Fórmula 1 em dificuldades convence Sonny a voltar a correr e se tornar o melhor do mundo.</p>
+        <section id="FILME" class="screening">
+            <div class="screening__frame">
+                <div class="screening__poster">
+                    <img src="../Midias/Imagens/poster1.png" alt="Pôster do filme Fórmula 1">
+                    <span class="screening__ribbon">EXCLUSIVO</span>
+                </div>
+                <div class="screening__info">
+                    <span class="page-kicker">O FILME</span>
+                    <h2>Sonny Hayes volta<br>para a pista</h2>
+                    <p>Na década de 1990, Sonny Hayes era o piloto mais promissor da Fórmula 1 até que um acidente na pista quase encerrou sua carreira. Trinta anos depois, o proprietário de uma equipe de Fórmula&nbsp;1 em dificuldades convence Sonny a voltar a correr e se tornar o melhor do mundo.</p>
+                    <div class="screening__meta">
+                        <span>🎬 Drama / Esporte</span>
+                        <span>🏁 Fórmula 1</span>
+                        <span>🎟️ 2025</span>
+                    </div>
                 </div>
             </div>
-            <div id="poster3">
-                <video src="../Midias/videos/f1edit.mp4" controls></video>
+
+            <div class="screen-wrap">
+                <div class="screen-wrap__glow"></div>
+                <span class="screen-wrap__label">TRAILER</span>
+                <div class="screen">
+                    <video src="../Midias/videos/f1edit.mp4" controls></video>
+                </div>
+                <div class="screen-stand"></div>
             </div>
         </section>
-        <section id="pod">
-            <h2 id="po">PODCASTS</h2>
-            <div id="conta">
-                <div><a href="https://www.f1mania.net/podcast/" target="_blank"><img src="../Midias/Imagens/pods/mmania.png" alt=""></a></div>
-                <div><a href="https://www.formula1.com/en/latest/tags/beyond-the-grid.63HGi6Q0grEg1ToZBtPNQ9" target="_blank"><img src="../Midias/Imagens/pods/beyondgrid.png" alt=""></a></div>
-                <div><a href="https://www.dazn.com/pt-BR/competition/Competition:1m5x4n07f2kqkiczebja5etiq" target="_blank"><img src="../Midias/Imagens/pods/dazn.png" alt=""></a></div>
-                <div><a href="https://www.latebrakingpodcast.com/" target="_blank"><img src="../Midias/Imagens/pods/braking late.png" alt=""></a></div>
-                <div><a href="https://www.formula1.com/en/latest/tags/f1-nation.4OP1JyE2Om4LVtCmDTIlPN" target="_blank"><img src="../Midias/Imagens/pods/f1nation.png" alt=""></a></div>
-                <div><a href="https://www.grandepremio.com.br/podcasts/" target="_blank"><img src="../Midias/Imagens/pods/grandepremio.png" alt=""></a></div>
-                <div><a href="https://open.spotify.com/show/5ikPuUzoDurzL3ep7BH6tL" target="_blank"><img src="../Midias/Imagens/pods/otosport.png" alt=""></a></div>
-                <div><a href="https://www.sporttv.pt/podcast-f1-na-sport-tv" target="_blank"><img src="../Midias/Imagens/pods/sporttv.png" alt=""></a></div>
-                <div><a href="https://www.the-race.com/" target="_blank"><img src="../Midias/Imagens/pods/the race.png" alt=""></a></div>
-                <div><a href="https://open.spotify.com/show/44WOouSMPldxafMFCKT3gA" target="_blank"><img src="../Midias/Imagens/pods/xadrez.png" alt=""></a></div>
+
+        <section id="pod" class="aftershow">
+            <div class="aftershow__head">
+                <span class="page-kicker">DEPOIS DOS CRÉDITOS</span>
+                <h2>Continue ouvindo</h2>
+                <p>Os melhores podcasts e coberturas de Fórmula 1 pra você maratonar entre uma corrida e outra.</p>
+            </div>
+            <div class="reel">
+                <div class="reel__track">
+                    <a href="https://www.f1mania.net/podcast/" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/mmania.png" alt=""></a>
+                    <a href="https://www.formula1.com/en/latest/tags/beyond-the-grid.63HGi6Q0grEg1ToZBtPNQ9" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/beyondgrid.png" alt=""></a>
+                    <a href="https://www.dazn.com/pt-BR/competition/Competition:1m5x4n07f2kqkiczebja5etiq" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/dazn.png" alt=""></a>
+                    <a href="https://www.latebrakingpodcast.com/" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/braking late.png" alt=""></a>
+                    <a href="https://www.formula1.com/en/latest/tags/f1-nation.4OP1JyE2Om4LVtCmDTIlPN" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/f1nation.png" alt=""></a>
+                    <a href="https://www.grandepremio.com.br/podcasts/" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/grandepremio.png" alt=""></a>
+                    <a href="https://open.spotify.com/show/5ikPuUzoDurzL3ep7BH6tL" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/otosport.png" alt=""></a>
+                    <a href="https://www.sporttv.pt/podcast-f1-na-sport-tv" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/sporttv.png" alt=""></a>
+                    <a href="https://www.the-race.com/" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/the race.png" alt=""></a>
+                    <a href="https://open.spotify.com/show/44WOouSMPldxafMFCKT3gA" target="_blank" class="reel__card"><img src="../Midias/Imagens/pods/xadrez.png" alt=""></a>
+                </div>
             </div>
         </section>
     </main>
-     <footer>
+
+    <footer>
         <div id="rodape">
             <h2>HIGH-STAKES F1</h2>
-            <p>Desenvolvido por:</p>
-            <a href="creditos.html">EQUIPE HIGH-STAKES</a>
-            <p>Fatec Marília - 2025</p>
+            <p>Desenvolvido por estudantes da Fatec Marília</p>
+            <p>2025</p>
         </div>
     </footer>
 </body>
