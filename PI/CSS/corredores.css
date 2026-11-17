@@ -102,16 +102,17 @@ main{
 }
 .driver-grid{
     display: grid;
-    grid-template-rows: repeat(2, auto);
-    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
     gap: var(--space-3);
     justify-content: center;
-    max-width: none;
+    width: min(100%, 1100px);
+    max-width: 1100px;
 }
 .driver-grid a{
     display: flex;
-    width: 110px;
-    height: 140px;
+    width: 100%;
+    min-width: 0;
+    aspect-ratio: 11 / 14;
     background-color: var(--bg-raised);
     border: 2px solid var(--hairline);
     border-radius: var(--radius-md);
@@ -131,14 +132,14 @@ main{
 
 .peek-panel-wrap{
     position: relative;
-    width: 100%;
-    max-width: 1100px;
+    width: min(100%, 1100px);
     margin-top: var(--space-5);
 }
 .driver-peek{
     position: relative;
     display: none;
     width: 100%;
+    max-width: 100%;
     min-height: 320px;
     background-color: var(--bg-raised);
     background-image: linear-gradient(135deg, #000000 0%, var(--bg-raised) 35%, var(--COREQUIPE, var(--accent-strong)) 130%);
@@ -149,6 +150,7 @@ main{
     align-items: center;
     gap: var(--space-7);
     overflow: hidden;
+    box-sizing: border-box;
 }
 .driver-peek::before{
     content: "";
@@ -168,7 +170,7 @@ main{
     to{ opacity: 1; transform: translateY(0); }
 }
 .driver-peek img{
-    width: 280px;
+    width: min(280px, 100%);
     aspect-ratio: 3/4;
     object-fit: cover;
     border-radius: var(--radius-md);
@@ -179,6 +181,8 @@ main{
     display: flex;
     flex-direction: column;
     gap: var(--space-3);
+    min-width: 0;
+    width: 100%;
 }
 .peek-team{
     display: inline-block;
@@ -195,7 +199,7 @@ main{
 }
 .driver-peek h3{
     font-family: var(--font-display);
-    font-size: 2.4rem;
+    font-size: clamp(1.7rem, 2.8vw, 2.4rem);
     color: var(--text-primary);
     text-shadow: 0 0 20px var(--COREQUIPE2, transparent);
 }
@@ -205,6 +209,7 @@ main{
     color: var(--text-secondary);
     line-height: 1.7;
     max-width: 60ch;
+    word-break: break-word;
 }
 
 /* ---------- Team colors (applied to the matching driver-peek cards) ---------- */
@@ -229,15 +234,15 @@ main{
     .page-hero{
         min-height: 36vh;
     }
+    #pista{
+        padding-inline: var(--space-3);
+    }
     .driver-grid{
-        overflow-x: auto;
-        justify-content: flex-start;
-        padding-bottom: var(--space-2);
+        grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
+        width: 100%;
     }
     .driver-grid a{
-        width: 80px;
-        height: 104px;
-        flex: none;
+        min-width: 0;
     }
     .driver-peek{
         flex-direction: column;
@@ -246,7 +251,7 @@ main{
         gap: var(--space-4);
     }
     .driver-peek img{
-        width: 180px;
+        width: min(220px, 100%);
     }
     .driver-peek h3{
         font-size: 1.7rem;
@@ -256,5 +261,9 @@ main{
     }
     .peek-text{
         align-items: center;
+        width: 100%;
+    }
+    .driver-peek p{
+        max-width: 100%;
     }
 }

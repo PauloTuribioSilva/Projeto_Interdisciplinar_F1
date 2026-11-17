@@ -69,9 +69,9 @@ main{
 #D3{
     position: relative;
     z-index: 1;
-    width: 100%;
-    max-width: 640px;
-    margin-left: 6vw;
+    width: min(100%, 640px);
+    max-width: calc(100vw - 10vw);
+    margin-left: clamp(1rem, 4vw, 6vw);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -90,9 +90,13 @@ main{
 }
 #D3 h1{
     font-family: var(--font-display);
-    font-size: clamp(2.2rem, 6vw, 4.5rem);
+    font-size: clamp(1.5rem, 4vw, 2.7rem);
     color: var(--text-primary);
-    line-height: 1;
+    line-height: 0.96;
+    max-width: 100%;
+    letter-spacing: -0.04em;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 #D3 h2{
     font-family: var(--font-ui);
@@ -376,8 +380,13 @@ main{
     }
     #D3{
         margin-left: 5vw;
-        max-width: 90%;
+        max-width: calc(100vw - 10vw);
         padding: var(--space-5) 0;
+    }
+    #D3 h1{
+        font-size: clamp(1.6rem, 8vw, 2.3rem);
+        line-height: 1;
+        max-width: 100%;
     }
     #PC h1{
         font-size: 1.6em;
@@ -410,5 +419,11 @@ main{
     .tab-switch label{
         padding: 8px 18px;
         font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px){
+    #D3 h1{
+        font-size: 1.9rem;
     }
 }
